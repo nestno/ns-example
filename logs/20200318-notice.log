@@ -1,0 +1,62 @@
+2020-03-18 07:37:36
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5917MB",
+    "Memory": "0.5526MB",
+    "Duration": "4.209ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index",
+        "aa": "1",
+        "bb": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-18 08:49:53
+Notice: ErrorException caught in D:\www\ns\app\home\home.php on line 23
+Message: Undefined variable: data
+{
+    "Peak": "0.5924MB",
+    "Memory": "0.5532MB",
+    "Duration": "3.3851ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/home/home.php on line 23"
+    ]
+}
+
+2020-03-18 08:49:54
+Notice: ErrorException caught in D:\www\ns\app\home\home.php on line 23
+Message: Undefined variable: data
+{
+    "Peak": "0.5924MB",
+    "Memory": "0.5532MB",
+    "Duration": "3.3851ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/home/home.php on line 23"
+    ]
+}
+

@@ -1,0 +1,300 @@
+2020-03-17 13:16:39
+Notice: LogicException caught in D:\www\ns\app\lib\League\Plates\Template\Directory.php on line 35
+Message: The specified path "D:\www\ns/app/views" does not exist.
+{
+    "Peak": "0.5156MB",
+    "Memory": "0.4768MB",
+    "Duration": "4.087ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->__construct called in D:/www/ns/app/index.php on line 35",
+        "League/Plates/Template/Directory->__construct called in D:/www/ns/app/lib/League/Plates/Engine.php on line 56",
+        "League/Plates/Template/Directory->set called in D:/www/ns/app/lib/League/Plates/Template/Directory.php on line 24"
+    ]
+}
+
+2020-03-17 13:19:10
+Notice: LogicException caught in D:\www\ns\app\lib\League\Plates\Template\Template.php on line 144
+Message: The template "profile" could not be found at "D:\www\ns/app/views\profile.php".
+{
+    "Peak": "0.5664MB",
+    "Memory": "0.5273MB",
+    "Duration": "5.075ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->render called in D:/www/ns/app/index.php on line 40",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276"
+    ]
+}
+
+2020-03-17 13:19:40
+Notice: LogicException caught in D:\www\ns\app\lib\League\Plates\Template\Template.php on line 144
+Message: The template "profile" could not be found at "D:\www\ns/app/views\profile.php".
+{
+    "Peak": "0.5664MB",
+    "Memory": "0.5274MB",
+    "Duration": "4.0848ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->render called in D:/www/ns/app/index.php on line 40",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276"
+    ]
+}
+
+2020-03-17 13:19:54
+Notice: LogicException caught in D:\www\ns\app\lib\League\Plates\Template\Template.php on line 144
+Message: The template "sidebar" could not be found at "D:\www\ns/app/views\sidebar.php".
+{
+    "Peak": "0.569MB",
+    "Memory": "0.53MB",
+    "Duration": "4.36ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->render called in D:/www/ns/app/index.php on line 40",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276",
+        "include called in D:/www/ns/app/lib/League/Plates/Template/Template.php on line 153",
+        "League/Plates/Template/Template->insert called in D:/www/ns/app/views/home/profile.php on line 6",
+        "League/Plates/Engine->render called in D:/www/ns/app/lib/League/Plates/Template/Template.php on line 289",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276"
+    ]
+}
+
+2020-03-17 13:20:36
+Notice: LogicException caught in D:\www\ns\app\lib\League\Plates\Template\Template.php on line 144
+Message: The template "layout" could not be found at "D:\www\ns/app/views\layout.php".
+{
+    "Peak": "0.5682MB",
+    "Memory": "0.5296MB",
+    "Duration": "4.4122ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->render called in D:/www/ns/app/index.php on line 40",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Template/Template.php on line 160"
+    ]
+}
+
+2020-03-17 13:20:54
+Notice: ErrorException caught in D:\www\ns\app\views\layout\layout.php on line 3
+Message: Undefined variable: company
+{
+    "Peak": "0.5705MB",
+    "Memory": "0.5314MB",
+    "Duration": "4.5171ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": ""
+    },
+    "Trace": [
+        "League/Plates/Engine->render called in D:/www/ns/app/index.php on line 40",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Engine.php on line 276",
+        "League/Plates/Template/Template->render called in D:/www/ns/app/lib/League/Plates/Template/Template.php on line 160",
+        "include called in D:/www/ns/app/lib/League/Plates/Template/Template.php on line 153",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/views/layout/layout.php on line 3"
+    ]
+}
+
+2020-03-17 21:58:45
+Notice: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, non-static method app\home\home::index() should not be called statically
+{
+    "Peak": "0.5913MB",
+    "Memory": "0.5522MB",
+    "Duration": "2.8541ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 22:00:17
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5898MB",
+    "Memory": "0.5506MB",
+    "Duration": "2.744ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:00:29
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5898MB",
+    "Memory": "0.5506MB",
+    "Duration": "2.8188ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:01:24
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5898MB",
+    "Memory": "0.5506MB",
+    "Duration": "3.3062ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:01:24
+Notice: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, non-static method app\home\home::index() should not be called statically
+{
+    "Peak": "0.5898MB",
+    "Memory": "0.5531MB",
+    "Duration": "3.515ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 22:02:17
+Notice: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, non-static method app\home\home::index() should not be called statically
+{
+    "Peak": "0.5896MB",
+    "Memory": "0.5505MB",
+    "Duration": "2.7661ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index&api=1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 22:11:30
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5919MB",
+    "Memory": "0.5527MB",
+    "Duration": "4.4131ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index",
+        "api": "1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:11:53
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5919MB",
+    "Memory": "0.5527MB",
+    "Duration": "4.323ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index",
+        "aa": "1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:14:50
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.592MB",
+    "Memory": "0.5528MB",
+    "Duration": "5.095ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index",
+        "aa": "1",
+        "bb": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+
+2020-03-17 22:15:11
+Notice: Exception caught in D:\www\ns\system\core\lib\cgi.php on line 204
+Message: /app/home/home/index => Missing params: [data]
+{
+    "Peak": "0.5921MB",
+    "Memory": "0.553MB",
+    "Duration": "4.3292ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index",
+        "aa": "1",
+        "bb": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128"
+    ]
+}
+

@@ -1,0 +1,84 @@
+2020-03-18 08:49:38
+Error: ArgumentCountError caught in D:\www\ns\app\home\home.php on line 27
+Message: Too few arguments to function app\home\home::output(), 0 passed in D:\www\ns\app\home\home.php on line 22 and exactly 1 expected
+{
+    "Peak": "0.5917MB",
+    "Memory": "0.5526MB",
+    "Duration": "2.7611ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "app/home/home->output called in D:/www/ns/app/home/home.php on line 22"
+    ]
+}
+
+2020-03-18 08:49:39
+Error: ArgumentCountError caught in D:\www\ns\app\home\home.php on line 27
+Message: Too few arguments to function app\home\home::output(), 0 passed in D:\www\ns\app\home\home.php on line 22 and exactly 1 expected
+{
+    "Peak": "0.5917MB",
+    "Memory": "0.5526MB",
+    "Duration": "2.774ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "app/home/home->output called in D:/www/ns/app/home/home.php on line 22"
+    ]
+}
+
+2020-03-18 08:49:48
+Error: ArgumentCountError caught in D:\www\ns\app\home\home.php on line 27
+Message: Too few arguments to function app\home\home::output(), 0 passed in D:\www\ns\app\home\home.php on line 22 and exactly 1 expected
+{
+    "Peak": "0.5919MB",
+    "Memory": "0.5528MB",
+    "Duration": "2.7349ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "app/home/home->output called in D:/www/ns/app/home/home.php on line 22"
+    ]
+}
+
+2020-03-18 08:49:50
+Error: ArgumentCountError caught in D:\www\ns\app\home\home.php on line 27
+Message: Too few arguments to function app\home\home::output(), 0 passed in D:\www\ns\app\home\home.php on line 22 and exactly 1 expected
+{
+    "Peak": "0.5919MB",
+    "Memory": "0.5528MB",
+    "Duration": "3.161ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "app/home/home->output called in D:/www/ns/app/home/home.php on line 22"
+    ]
+}
+

@@ -1,0 +1,211 @@
+2020-03-17 21:53:04
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'home/home' not found
+{
+    "Peak": "0.5907MB",
+    "Memory": "0.5515MB",
+    "Duration": "5.6438ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 46",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:54:53
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'home/home' not found
+{
+    "Peak": "0.5914MB",
+    "Memory": "0.5523MB",
+    "Duration": "4.3468ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:54:58
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'home/home' not found
+{
+    "Peak": "0.5914MB",
+    "Memory": "0.5523MB",
+    "Duration": "4.2539ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:55:23
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app/home' not found
+{
+    "Peak": "0.5914MB",
+    "Memory": "0.5523MB",
+    "Duration": "5.0299ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:55:37
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app/home/home' not found
+{
+    "Peak": "0.5914MB",
+    "Memory": "0.5523MB",
+    "Duration": "4.2219ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:56:20
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app/home' not found
+{
+    "Peak": "0.5914MB",
+    "Memory": "0.5523MB",
+    "Duration": "4.2942ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:56:55
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app/home' not found
+{
+    "Peak": "0.5912MB",
+    "Memory": "0.5521MB",
+    "Duration": "4.298ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:57:51
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app/home/home' not found
+{
+    "Peak": "0.5912MB",
+    "Memory": "0.5521MB",
+    "Duration": "5.053ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:58:20
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class 'app\home/home' not found
+{
+    "Peak": "0.5912MB",
+    "Memory": "0.5521MB",
+    "Duration": "4.2701ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 21:59:10
+Warning: ErrorException caught in D:\www\ns\system\core\lib\std\io.php on line 152
+Message: call_user_func() expects parameter 1 to be a valid callback, class '\app\home/home' not found
+{
+    "Peak": "0.5913MB",
+    "Memory": "0.5522MB",
+    "Duration": "3.5729ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-17 22:09:26
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 24
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5912MB",
+    "Memory": "0.552MB",
+    "Duration": "4.3519ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index&api=1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 24",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+

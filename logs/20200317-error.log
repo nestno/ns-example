@@ -1,0 +1,57 @@
+2020-03-17 21:59:43
+Error: TypeError caught in D:\www\ns\app\home\home.php on line 20
+Message: Argument 1 passed to app\home\home::index() must be of the type array, object given
+{
+    "Peak": "0.5907MB",
+    "Memory": "0.5515MB",
+    "Duration": "2.907ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home::index called"
+    ]
+}
+
+2020-03-17 22:08:33
+Error: TypeError caught in D:\www\ns\app\home\home.php on line 24
+Message: Return value of app\home\home::index() must be of the type array, string returned
+{
+    "Peak": "0.5906MB",
+    "Memory": "0.5515MB",
+    "Duration": "4.4382ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index&api=1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->index called"
+    ]
+}
+
+2020-03-17 22:08:47
+Error: TypeError caught in D:\www\ns\app\home\home.php on line 24
+Message: Return value of app\home\home::index() must be of the type array, string returned
+{
+    "Peak": "0.5905MB",
+    "Memory": "0.5513MB",
+    "Duration": "4.292ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index&api=1"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/index.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->index called"
+    ]
+}
+
