@@ -82,3 +82,41 @@ Message: Too few arguments to function app\home\home::output(), 0 passed in D:\w
     ]
 }
 
+2020-03-18 09:34:50
+Error: TypeError caught in D:\www\ns\app\home\home.php on line 34
+Message: Return value of app\home\home::output() must be of the type array, none returned
+{
+    "Peak": "0.5982MB",
+    "Memory": "0.5587MB",
+    "Duration": "3.7391ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->output called"
+    ]
+}
+
+2020-03-18 09:42:21
+Error: Error caught in D:\www\ns\app\home\home.php on line 31
+Message: Class 'app\home\League\Plates\Engine' not found
+{
+    "Peak": "0.6019MB",
+    "Memory": "0.5627MB",
+    "Duration": "5.475ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->output called"
+    ]
+}
+

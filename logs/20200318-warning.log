@@ -108,3 +108,179 @@ Message: json_decode() expects parameter 1 to be string, object given
     ]
 }
 
+2020-03-18 09:30:11
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5981MB",
+    "Memory": "0.5589MB",
+    "Duration": "5.8441ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:32:36
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5985MB",
+    "Memory": "0.5595MB",
+    "Duration": "5.2822ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:33:49
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5985MB",
+    "Memory": "0.5595MB",
+    "Duration": "4.4489ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:34:02
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5985MB",
+    "Memory": "0.5595MB",
+    "Duration": "4.5261ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:34:50
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5982MB",
+    "Memory": "0.5593MB",
+    "Duration": "3.463ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:35:20
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5982MB",
+    "Memory": "0.5592MB",
+    "Duration": "2.985ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:36:22
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5986MB",
+    "Memory": "0.5596MB",
+    "Duration": "4.941ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 09:39:01
+Warning: ErrorException caught in D:\www\ns\app\home\home.php on line 26
+Message: json_decode() expects parameter 1 to be string, object given
+{
+    "Peak": "0.5986MB",
+    "Memory": "0.5596MB",
+    "Duration": "3.7169ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "json_decode called in D:/www/ns/app/home/home.php on line 26",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+

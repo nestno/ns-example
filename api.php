@@ -28,21 +28,17 @@
 error_reporting(E_ALL);
 
 //Load main script
-require __DIR__ . '/../system/core/ns.php';
+require __DIR__ . '/system/core/ns.php';
 
 \ext\core::autoload('app/lib');
 //\ext\core::autoload('app/home');
 //Register custom router if needed
-//\ext\core::register_router_function(['class/object', 'method']);
+\ext\core::register_router_function([new \app\lib\mapClass(), 'mapC']);
 
 //Set custom output handler if needed
-\ext\core::set_output_handler([new \app\home\home(), 'output']);
-//$templates = new League\Plates\Engine(ROOT . '/app/' . 'views');
-//// Preassign data to the layout
-//$templates->addData(['company' => 'The Company Name'], 'layout/layout');
-//
-//// Render a template
-//echo $templates->render('home/profile', ['name' => 'Jonathan']);
+\ext\core::set_output_handler([new \app\lib\output(), 'index']);
+
 //Boot NS
 new \core\ns();
+
 

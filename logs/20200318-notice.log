@@ -60,3 +60,44 @@ Message: Undefined variable: data
     ]
 }
 
+2020-03-18 09:30:35
+Notice: ErrorException caught in D:\www\ns\app\home\home.php on line 25
+Message: Undefined property: app\home\home::$pool
+{
+    "Peak": "0.5975MB",
+    "Memory": "0.5583MB",
+    "Duration": "4.53ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/home/home->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/home/home.php on line 25"
+    ]
+}
+
+2020-03-18 09:39:01
+Notice: ErrorException caught in D:\www\ns\app\home\home.php on line 32
+Message: Array to string conversion
+{
+    "Peak": "0.5986MB",
+    "Memory": "0.566MB",
+    "Duration": "4.0019ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/home-index"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/app/api.php on line 47",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/home/home->output called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/home/home.php on line 32"
+    ]
+}
+
