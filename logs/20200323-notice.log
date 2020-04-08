@@ -1,0 +1,210 @@
+2020-03-23 10:42:17
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7093MB",
+    "Memory": "0.6668MB",
+    "Duration": "12.6781ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:42:20
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7089MB",
+    "Memory": "0.6663MB",
+    "Duration": "11.1551ms",
+    "Param": {
+        "ip": "42.236.10.114",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:43:06
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7091MB",
+    "Memory": "0.6666MB",
+    "Duration": "11.874ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:43:43
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7084MB",
+    "Memory": "0.6658MB",
+    "Duration": "11.7259ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": ""
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:43:45
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7085MB",
+    "Memory": "0.6659MB",
+    "Duration": "11.627ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index.php"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:43:47
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7084MB",
+    "Memory": "0.6659MB",
+    "Duration": "9.274ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 10:56:56
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7091MB",
+    "Memory": "0.6666MB",
+    "Duration": "221.0858ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 12:05:24
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7091MB",
+    "Memory": "0.6666MB",
+    "Duration": "137.1131ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 14:58:34
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7102MB",
+    "Memory": "0.6676MB",
+    "Duration": "11.7571ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+
+2020-03-23 16:12:11
+Notice: ErrorException caught in /www/wwwroot/nss/app/contorllers/home.php on line 41
+Message: Undefined variable: url
+{
+    "Peak": "0.7086MB",
+    "Memory": "0.6661MB",
+    "Duration": "154.774ms",
+    "Param": {
+        "ip": "113.103.112.8",
+        "cmd": "index"
+    },
+    "Trace": [
+        "core/ns->__construct called in /www/wwwroot/nss/api.php on line 42",
+        "core/lib/cgi->call_service called in /www/wwwroot/nss/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 128",
+        "call_user_func called in /www/wwwroot/nss/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in /www/wwwroot/nss/app/contorllers/home.php on line 41"
+    ]
+}
+

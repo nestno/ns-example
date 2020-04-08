@@ -101,3 +101,109 @@ Message: Array to string conversion
     ]
 }
 
+2020-03-18 17:51:06
+Notice: ErrorException caught in D:\www\ns\app\lib\output.php on line 19
+Message: Undefined variable: php_errormsg
+{
+    "Peak": "0.6075MB",
+    "Memory": "0.5687MB",
+    "Duration": "6.547ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/lib/output->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/lib/output.php on line 19"
+    ]
+}
+
+2020-03-18 17:57:36
+Notice: ErrorException caught in D:\www\ns\app\lib\output.php on line 19
+Message: Undefined variable: http_response_header
+{
+    "Peak": "0.6075MB",
+    "Memory": "0.5687MB",
+    "Duration": "5.7669ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/lib/output->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/lib/output.php on line 19"
+    ]
+}
+
+2020-03-18 17:59:10
+Notice: ErrorException caught in D:\www\ns\app\lib\output.php on line 19
+Message: Undefined variable: http_response_header
+{
+    "Peak": "0.6075MB",
+    "Memory": "0.5688MB",
+    "Duration": "6.2261ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/lib/output->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/lib/output.php on line 19"
+    ]
+}
+
+2020-03-18 19:40:58
+Notice: ErrorException caught in D:\www\ns\app\lib\output.php on line 19
+Message: Undefined variable: http_response_header
+{
+    "Peak": "0.6095MB",
+    "Memory": "0.5768MB",
+    "Duration": "4.4761ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/lib/output->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/lib/output.php on line 19"
+    ]
+}
+
+2020-03-18 19:44:36
+Notice: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 35
+Message: Undefined variable: serverid
+{
+    "Peak": "0.609MB",
+    "Memory": "0.5702MB",
+    "Duration": "3.7439ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "core/lib/stc/error::error_handler called in D:/www/ns/app/contorllers/home.php on line 35"
+    ]
+}
+

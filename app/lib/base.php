@@ -65,12 +65,15 @@ class base extends factory
         errno::load('app/lib/msg', 'error');
 
         //初始化配置
-        self::init();
+        $this->init();
     }
 
-    /**
-     * 初始化配置
-     */
+  /**
+   * 初始化配置
+   *
+   * @throws \ReflectionException
+   * @throws \RedisException
+   */
     public function init(): void
     {
         $this->mysql = mysql::new()->use_pdo(pdo::create(conf::get('mysql'))->connect());

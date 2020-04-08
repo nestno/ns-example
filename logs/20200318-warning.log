@@ -284,3 +284,164 @@ Message: json_decode() expects parameter 1 to be string, object given
     ]
 }
 
+2020-03-18 19:40:58
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 27
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6095MB",
+    "Memory": "0.5707MB",
+    "Duration": "4.174ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 27",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:41:19
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 27
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6094MB",
+    "Memory": "0.5706MB",
+    "Duration": "3.166ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 27",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:41:48
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 27
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6094MB",
+    "Memory": "0.5706MB",
+    "Duration": "3.099ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 27",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:42:28
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 27
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6097MB",
+    "Memory": "0.5709MB",
+    "Duration": "3.0751ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 27",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:42:48
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 27
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6042MB",
+    "Memory": "0.5655MB",
+    "Duration": "3.063ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 27",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:43:28
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 41
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6038MB",
+    "Memory": "0.565MB",
+    "Duration": "3.6941ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 41",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+
+2020-03-18 19:43:30
+Warning: ErrorException caught in D:\www\ns\app\contorllers\home.php on line 41
+Message: explode(): Empty delimiter
+{
+    "Peak": "0.6038MB",
+    "Memory": "0.565MB",
+    "Duration": "3.036ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called",
+        "explode called in D:/www/ns/app/contorllers/home.php on line 41",
+        "core/lib/stc/error::error_handler called"
+    ]
+}
+

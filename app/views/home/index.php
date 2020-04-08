@@ -3,7 +3,7 @@
 <h1>User Profile</h1>
 <p>Hello, <?=$this->e($name)?>!</p>
 
-<?php $this->insert('home/sidebar') ?>
+<?php $this->insert('home/tabbar') ?>
 
 <?php $this->push('scripts') ?>
     <script>

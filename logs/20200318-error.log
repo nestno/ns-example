@@ -120,3 +120,44 @@ Message: Class 'app\home\League\Plates\Engine' not found
     ]
 }
 
+2020-03-18 17:51:31
+Error: Error caught in D:\www\ns\app\lib\output.php on line 19
+Message: Call to undefined function app\lib\php_errormsg()
+{
+    "Peak": "0.6065MB",
+    "Memory": "0.5678MB",
+    "Duration": "4.7009ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/std/io->output called in D:/www/ns/system/core/ns.php on line 218",
+        "call_user_func called in D:/www/ns/system/core/lib/std/io.php on line 152",
+        "app/lib/output->index called"
+    ]
+}
+
+2020-03-18 19:46:13
+Error: TypeError caught in D:\www\ns\app\contorllers\home.php on line 42
+Message: Return value of app\contorllers\home::index() must be of the type array, string returned
+{
+    "Peak": "0.6073MB",
+    "Memory": "0.5686MB",
+    "Duration": "78.613ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "abc": "2"
+    },
+    "Trace": [
+        "core/ns->__construct called in D:/www/ns/api.php on line 42",
+        "core/lib/cgi->call_service called in D:/www/ns/system/core/ns.php on line 208",
+        "core/lib/cgi->call_func called in D:/www/ns/system/core/lib/cgi.php on line 128",
+        "call_user_func called in D:/www/ns/system/core/lib/cgi.php on line 208",
+        "app/contorllers/home->index called"
+    ]
+}
+
