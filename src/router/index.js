@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from 'views/home/Home.vue'
-import news from 'components/category/news'
-import message from 'components/category/message'
+import news from 'views/category/news';
+import message from 'views/category/message';
 const category = () => import('views/category/category')
 
 Vue.use(VueRouter)
