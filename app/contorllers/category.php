@@ -11,7 +11,7 @@ namespace app\contorllers;
 
 use ext\factory;
 
-class home extends factory
+class category extends factory
 {
   public $tz = '*';
 
@@ -22,13 +22,13 @@ class home extends factory
 
   public function index(): array
   {
-    $url = ['bbb'=>'http://taobao.com'];
+    $url = ['ccc'=>'http://taobao.com'];
     return $url;
   }
 
   public function getData(): array
   {
-    $url = ['aaa'=>'http://taobao.com'];
+    $url = ['ddd'=>'http://taobao.com'];
     return $url;
   }
 }

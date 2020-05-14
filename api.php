@@ -33,6 +33,7 @@ require __DIR__ . '/system/core/ns.php';
 \ext\core::autoload('app/lib');
 //\ext\core::autoload('app/home');
 //Register custom router if needed
+
 \ext\core::register_router_function([new \app\lib\mapClass(), 'mapC']);
 
 //Set custom output handler if needed

@@ -1,13 +1,6 @@
-<!-- 导航栏 -->
+<!--  -->
 <template>
-  <div class="tabbar">
-    <div class="logo"><slot name="logo"></slot></div>
-    <div class="content">
-      <slot name="content"></slot>
-    </div>
-    <div class="ustate">
-      <slot name="ustate"></slot>
-    </div>
+  <div class="foot">
   </div>
 </template>
 
@@ -16,10 +9,17 @@
 //例如：import 《组件名称》 from '《组件路径》'
 
 export default {
-  name: 'TabBar',
+  name: 'Foot',
   //import引入的组件需要注入到对象中才能使用
   components: {},
-  props: {},
+  props: {
+    foot: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
   data() {
     //这里存放数据
     return {}

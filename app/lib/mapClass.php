@@ -12,15 +12,51 @@ namespace app\lib;
 
 class mapClass
 {
-    public function mapC($c): array
-    {
-        $map = [
-            'home/index'=>[
-                'contorllers/home',
-                'index'
-            ]
-        ];
-        //var_dump($c);die;
-        return $map;
+  private $c = null;
+  private $nmap = null;
+  private $contorllers = 'contorllers';
+
+  public function mapC($c): array
+  {
+    $this->c = $c;
+
+    $map = [
+      'contorllers\home' => [
+        'index',
+        'getData',
+      ],
+      'contorllers\category' => [
+        'index',
+        'getData',
+      ],
+    ];
+    if($c)
+    var_dump($this->c);
+    $nmap = array_filter(
+      $map,
+      array($this, 'mapFilter')
+    );
+
+//    var_dump($nmap);
+    return $map;
+  }
+
+  private function mapFilter($val)
+  {
+
+//      var_dump($val);
+//      var_dump($this->c);
+    foreach ($val as $item) {
+      if ($item == $this->c) {
+        return $item;
+      }
     }
+//      if(is_array($val)){
+//        $this->nmap = array_filter($val,[$this,'mapFilter']);
+//
+//      }else{
+//        return $this->c == $val;
+//      }
+
+  }
 }
