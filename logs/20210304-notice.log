@@ -1,0 +1,22 @@
+2021-03-04 13:35:30
+Notice: Exception caught in H:\www\ns_vendor\Core\Lib\Router.php on line 148
+Message: "index" NOT found!
+{
+    "Peak": "0.7063MB",
+    "Memory": "0.6668MB",
+    "Duration": "17.601ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "index/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "Core/Lib/Router->parse called in H:/www/ns_vendor/NS.php on line 131",
+        "Core/Lib/Router->callParser called in H:/www/ns_vendor/Core/Lib/Router.php on line 102",
+        "call_user_func called in H:/www/ns_vendor/Core/Lib/Router.php on line 202",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+

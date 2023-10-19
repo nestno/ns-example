@@ -1,0 +1,238 @@
+2021-11-18 11:11:12
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 73
+Message: substr() expects at most 3 parameters, 4 given
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8798MB",
+    "Duration": "452.1608ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "substr called in H:/www/ns/app/contorllers/home.php on line 73",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:12:18
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: A non-numeric value encountered
+{
+    "Peak": "8.871MB",
+    "Memory": "4.879MB",
+    "Duration": "412.565ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:13:56
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: A non-numeric value encountered
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8791MB",
+    "Duration": "431.916ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:33:20
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match(): Compilation failed: (*VERB) not recognized or malformed at offset 16
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9452MB",
+    "Duration": "90.7612ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:33:39
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match(): Compilation failed: (*VERB) not recognized or malformed at offset 17
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9451MB",
+    "Duration": "119.4589ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:33:47
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match(): Compilation failed: (*VERB) not recognized or malformed at offset 16
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9452MB",
+    "Duration": "127.1911ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:34:56
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match(): Compilation failed: (*VERB) not recognized or malformed at offset 17
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9451MB",
+    "Duration": "127.943ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:56:28
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match_all(): Unknown modifier 'g'
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9451MB",
+    "Duration": "134.953ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match_all called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 11:56:33
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 70
+Message: preg_match_all(): Unknown modifier 'G'
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9451MB",
+    "Duration": "124.346ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match_all called in H:/www/ns/app/contorllers/home.php on line 70",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+
+2021-11-18 12:14:00
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: preg_match(): Unknown modifier 'a'
+{
+    "Peak": "1.1379MB",
+    "Memory": "1.0984MB",
+    "Duration": "125.16ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 74",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+

@@ -9,54 +9,34 @@
 
 namespace app\lib;
 
-
 class mapClass
 {
-  private $c = null;
-  private $nmap = null;
-  private $contorllers = 'contorllers';
+    private $f = null;
+    private $nmap = null;
+    private $col = 'contorllers';
 
-  public function mapC($c): array
-  {
-    $this->c = $c;
+    public function mapC($c): array
+    {
+        if (strpos($c, '/') === false) {
+            $f = 'index';
+        } else {
+            list($c, $f) = explode('/', $c);
+        }
 
-    $map = [
-      'contorllers\home' => [
-        'index',
-        'getData',
-      ],
-      'contorllers\category' => [
-        'index',
-        'getData',
-      ],
-    ];
-    if($c)
-    var_dump($this->c);
-    $nmap = array_filter(
-      $map,
-      array($this, 'mapFilter')
-    );
+        $hook = [
+            'h' => 'home',
+            'c' => 'category',
+        ];
 
-//    var_dump($nmap);
-    return $map;
-  }
+        $key = '';
 
-  private function mapFilter($val)
-  {
+        if ($hook[$c]) {
+            $key = $this->col . "\\" . $hook[$c];
+        }
 
-//      var_dump($val);
-//      var_dump($this->c);
-    foreach ($val as $item) {
-      if ($item == $this->c) {
-        return $item;
-      }
+        $map[$key] = [$f];
+
+        return $map;
     }
-//      if(is_array($val)){
-//        $this->nmap = array_filter($val,[$this,'mapFilter']);
-//
-//      }else{
-//        return $this->c == $val;
-//      }
 
-  }
 }

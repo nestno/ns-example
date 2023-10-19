@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>WebSocket Test</title>
+<script language="javascript" type="text/javascript">
+  var wsUri = "ws://127.0.0.1:2468/";
+  var output;
+
+  function init() {
+    output = document.getElementById("output");
+    document.getElementById('cbtn').addEventListener('click', () => {
+      onClose()
+    })
+    document.getElementById('sbtn').addEventListener('click', () => {
+      let message = document.getElementById('message')
+      doSend(message.value)
+    })
+    document.getElementById('rebtn').addEventListener('click', () => {
+      testWebSocket();
+    })
+    testWebSocket();
+  }
+
+  function testWebSocket() {
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function (evt) {
+      onOpen(evt)
+    };
+    websocket.onclose = function (evt) {
+      writeToScreen("DISCONNECTED");
+    };
+    websocket.onmessage = function (evt) {
+      onMessage(evt)
+    };
+    websocket.onerror = function (evt) {
+      onError(evt)
+    };
+  }
+  function onOpen(evt) {
+    writeToScreen("CONNECTED");
+    doSend('wxsocket connect');
+  }
+
+  function onClose(evt) {
+    websocket.close();
+  }
+
+  function onMessage(evt) {
+    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data + '</span>');
+    console.log(evt)
+    var data = JSON.parse(evt.data), ndata;
+    ndata = { to_sid: data.sid, type: -1 }
+    websocket.send(JSON.stringify(ndata));
+    // websocket.close();
+  }
+
+  function onError(evt) {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend(message) {
+    writeToScreen("SENT: " + message);
+    websocket.send(message);
+  }
+
+  function writeToScreen(message) {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    output.appendChild(pre);
+  }
+
+  window.addEventListener("load", init, false);
+
+</script>
+<h2>WebSocket Test</h2>
+<div id="output"></div>
+<button id="cbtn">断开</button>
+<input type="text" id="message"><button id="sbtn">发送消息</button>
+<button id="rebtn">重新连接</button>
+
+</html>

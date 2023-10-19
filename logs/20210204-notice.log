@@ -1,0 +1,171 @@
+2021-02-04 14:25:42
+Notice: ErrorException caught in H:\www\ns\app\views\layout\layout.php on line 10
+Message: Undefined variable: bbb
+{
+    "Peak": "0.9231MB",
+    "Memory": "0.883MB",
+    "Duration": "10.2282ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/layout/layout.php on line 10"
+    ]
+}
+
+2021-02-04 15:22:25
+Notice: ErrorException caught in H:\www\ns\app\views\commons\tabbar.php on line 5
+Message: Undefined variable: tData
+{
+    "Peak": "0.9406MB",
+    "Memory": "0.8873MB",
+    "Duration": "11.209ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "League/Plates/Template/Template->insert called in H:/www/ns/app/views/layout/layout.php on line 10",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 290",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/commons/tabbar.php on line 5"
+    ]
+}
+
+2021-02-04 20:01:02
+Notice: LogicException caught in H:\www\ns\app\lib\League\Plates\Template\Template.php on line 145
+Message: The template "commons" could not be found at "H:\www\ns/app/views\commons.php".
+{
+    "Peak": "0.9405MB",
+    "Memory": "0.8825MB",
+    "Duration": "9.866ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161"
+    ]
+}
+
+2021-02-04 20:01:20
+Notice: ErrorException caught in H:\www\ns\app\views\commons\header.php on line 4
+Message: Undefined variable: title
+{
+    "Peak": "0.9405MB",
+    "Memory": "0.8848MB",
+    "Duration": "7.2ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/commons/header.php on line 4"
+    ]
+}
+
+2021-02-04 20:01:43
+Notice: ErrorException caught in H:\www\ns\app\views\commons\header.php on line 4
+Message: Undefined variable: company
+{
+    "Peak": "0.9409MB",
+    "Memory": "0.8848MB",
+    "Duration": "7.1652ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 161",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/commons/header.php on line 4"
+    ]
+}
+
+2021-02-04 20:27:20
+Notice: ErrorException caught in H:\www\ns\app\views\home\index.php on line 6
+Message: Undefined variable: title
+{
+    "Peak": "0.9218MB",
+    "Memory": "0.8823MB",
+    "Duration": "6.9869ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/home/index.php on line 6"
+    ]
+}
+
+2021-02-04 20:30:33
+Notice: ErrorException caught in H:\www\ns\app\views\home\index.php on line 6
+Message: Undefined variable: title
+{
+    "Peak": "0.9216MB",
+    "Memory": "0.882MB",
+    "Duration": "8.729ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/views/home/index.php on line 6"
+    ]
+}
+

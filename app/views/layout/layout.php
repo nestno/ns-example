@@ -1,13 +1,9 @@
-<html>
-<head>
-    <title><?=$this->e($title)?> | <?=$this->e($company)?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+<?php $this->insert('commons/header', ['title' => $title, 'company' => $company, 'data' => $tData]) ?>
+<?= $this->section('abc') ?>
+<?php
+var_dump($this->sections);
+?>
+<?= $this->section('content') ?>
+<?= $this->section('scripts') ?>
+<?php $this->insert('commons/footer') ?>
 
-<?=$this->section('content')?>
-
-<?=$this->section('scripts')?>
-
-</body>
-</html>

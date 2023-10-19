@@ -1,0 +1,418 @@
+2022-08-14 21:03:46
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6793MB",
+    "Memory": "0.6432MB",
+    "Duration": "4.3058ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:04:40
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "controllers/home" NOT found!
+{
+    "Peak": "0.6794MB",
+    "Memory": "0.6433MB",
+    "Duration": "3.737ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:11:32
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "controllers/home" NOT found!
+{
+    "Peak": "0.68MB",
+    "Memory": "0.644MB",
+    "Duration": "4.739ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:11:39
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6799MB",
+    "Memory": "0.6438MB",
+    "Duration": "3.8841ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:12:03
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.68MB",
+    "Memory": "0.6439MB",
+    "Duration": "3.6361ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:12:27
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.68MB",
+    "Memory": "0.6439MB",
+    "Duration": "4.4951ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:13:04
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6801MB",
+    "Memory": "0.6444MB",
+    "Duration": "4.1509ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:13:25
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6801MB",
+    "Memory": "0.644MB",
+    "Duration": "3.5899ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:13:40
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6804MB",
+    "Memory": "0.6442MB",
+    "Duration": "4.575ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:13:51
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6804MB",
+    "Memory": "0.6446MB",
+    "Duration": "3.5958ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 171",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:14:16
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6799MB",
+    "Memory": "0.6438MB",
+    "Duration": "3.653ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:14:49
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 102
+Message: "home" NOT found!
+{
+    "Peak": "0.6801MB",
+    "Memory": "0.6444MB",
+    "Duration": "3.701ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 43",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 171",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:15:23
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6799MB",
+    "Memory": "0.6438MB",
+    "Duration": "3.891ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 171",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:16:24
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6802MB",
+    "Memory": "0.6445MB",
+    "Duration": "4.493ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 171",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:16:51
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6802MB",
+    "Memory": "0.6441MB",
+    "Duration": "3.9549ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:16:56
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6802MB",
+    "Memory": "0.6441MB",
+    "Duration": "3.7351ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:17:13
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6802MB",
+    "Memory": "0.6441MB",
+    "Duration": "3.6891ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:17:36
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "home" NOT found!
+{
+    "Peak": "0.6802MB",
+    "Memory": "0.6441MB",
+    "Duration": "3.5379ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+
+2022-08-14 21:22:59
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "controllers/home" NOT found!
+{
+    "Peak": "0.6794MB",
+    "Memory": "0.6433MB",
+    "Duration": "3.8009ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+

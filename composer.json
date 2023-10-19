@@ -1,0 +1,13 @@
+{
+    "name": "kb/ns",
+    "authors": [
+        {
+            "name": "douglas99",
+            "email": "704505144@qq.com"
+        }
+    ],
+    "require": {
+        "overtrue/pinyin": "~4.0",
+        "alibabacloud/sdk": "^1.8"
+    }
+}

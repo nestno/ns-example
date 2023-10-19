@@ -1,0 +1,25 @@
+2021-02-05 19:41:42
+Notice: LogicException caught in H:\www\ns\app\lib\League\Plates\Template\Template.php on line 145
+Message: The template "home/tabbar" could not be found at "H:\www\ns/app/views\home/tabbar.php".
+{
+    "Peak": "0.9229MB",
+    "Memory": "0.8834MB",
+    "Duration": "419.0111ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "League/Plates/Template/Template->insert called in H:/www/ns/app/views/home/index.php on line 6",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 289",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278"
+    ]
+}
+

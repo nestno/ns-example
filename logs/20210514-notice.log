@@ -1,0 +1,1403 @@
+2021-05-14 12:21:27
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "255.4832ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:29
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "332.9451ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:30
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "287.7529ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:31
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "202.213ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:32
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "250.5779ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:34
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "263.8068ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:35
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "562.0589ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:37
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9802MB",
+    "Memory": "0.8788MB",
+    "Duration": "287.061ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:38
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "475.6331ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:39
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "303.731ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:41
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "251.8189ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:42
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "204.339ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "164.2039ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:45
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "540.858ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "252.6751ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:49
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "1593.3092ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:50
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "201.859ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:51
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "506.5329ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:53
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "934.5551ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:55
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "415.297ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:56
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "434.1991ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:58
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "488.7249ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:21:59
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "294.421ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:00
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "216.4109ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:01
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "319.684ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:04
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "1192.9231ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:05
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "193.511ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:06
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "285.8729ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "207.5882ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:09
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "330.394ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:10
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "187.0701ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:11
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "248.9948ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:13
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "284.368ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:14
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "879.369ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:16
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "746.3989ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:18
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "1269.9349ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:20
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "235.6911ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:21
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "376.3618ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:22
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "162.54ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:24
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "340.739ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:25
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "280.7751ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:27
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "894.567ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:28
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "186.718ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:29
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "165.3841ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:32
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "1293.159ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:33
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "769.557ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:35
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "701.6821ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:36
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "267.904ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:38
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "201.355ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:40
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "1431.21ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:41
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "260.077ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "353.8911ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:44
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "265.121ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:22:45
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 76
+Message: Undefined offset: 1
+{
+    "Peak": "0.9797MB",
+    "Memory": "0.8784MB",
+    "Duration": "244.314ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 76"
+    ]
+}
+
+2021-05-14 12:32:17
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 90
+Message: Undefined offset: 15
+{
+    "Peak": "0.9851MB",
+    "Memory": "0.8837MB",
+    "Duration": "183.877ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 90"
+    ]
+}
+
+2021-05-14 14:53:56
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9816MB",
+    "Memory": "0.9398MB",
+    "Duration": "11801884.5091ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-05-14 14:53:56
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9809MB",
+    "Memory": "0.9393MB",
+    "Duration": "11490144.243ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-05-14 14:53:57
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9816MB",
+    "Memory": "0.8774MB",
+    "Duration": "11213115.803ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-05-14 14:54:00
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9809MB",
+    "Memory": "0.9393MB",
+    "Duration": "11846454.607ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-05-14 14:54:00
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9816MB",
+    "Memory": "0.9398MB",
+    "Duration": "11836823.827ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-05-14 14:54:05
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9816MB",
+    "Memory": "0.8774MB",
+    "Duration": "11186691.3359ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+

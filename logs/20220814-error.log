@@ -1,0 +1,134 @@
+2022-08-14 10:22:45
+Error: Error caught in H:\www\ns\app\api.php on line 25
+Message: Class "app\hook\utkToken" not found
+{
+    "Peak": "0.6829MB",
+    "Memory": "0.6406MB",
+    "Duration": "7.781ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "",
+        "data": [],
+        "argv": []
+    },
+    "Trace": []
+}
+
+2022-08-14 10:23:01
+Error: Error caught in H:\www\ns\app\api.php on line 25
+Message: Class "app\hook\utkToken" not found
+{
+    "Peak": "0.6829MB",
+    "Memory": "0.6406MB",
+    "Duration": "4.6439ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "",
+        "data": [],
+        "argv": []
+    },
+    "Trace": []
+}
+
+2022-08-14 10:23:42
+Error: Error caught in H:\www\ns\app\api.php on line 31
+Message: Class "app\hook\admin" not found
+{
+    "Peak": "0.68MB",
+    "Memory": "0.6397MB",
+    "Duration": "4.1981ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "",
+        "data": [],
+        "argv": []
+    },
+    "Trace": []
+}
+
+2022-08-14 21:27:46
+Error: Error caught in H:\www\ns\app\controllers\home.php on line 35
+Message: Call to a member function query() on null
+{
+    "Peak": "0.7188MB",
+    "Memory": "0.6782MB",
+    "Duration": "6.7759ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in H:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in H:/www/ns/NervSys/Core/Lib/Caller.php on line 52",
+        "app/controllers/home->index called"
+    ]
+}
+
+2022-08-14 21:31:29
+Error: Error caught in H:\www\ns\app\controllers\home.php on line 52
+Message: Class "League\Plates\Engine" not found
+{
+    "Peak": "0.719MB",
+    "Memory": "0.6783MB",
+    "Duration": "4.2241ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in H:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in H:/www/ns/NervSys/Core/Lib/Caller.php on line 52",
+        "app/controllers/home->index called"
+    ]
+}
+
+2022-08-14 21:32:44
+Error: Error caught in H:\www\ns\app\controllers\home.php on line 52
+Message: Class "League\Plates\Engine" not found
+{
+    "Peak": "0.7203MB",
+    "Memory": "0.6797MB",
+    "Duration": "6.3ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in H:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in H:/www/ns/NervSys/Core/Lib/Caller.php on line 52",
+        "app/controllers/home->index called"
+    ]
+}
+
+2022-08-14 21:33:05
+Error: Error caught in H:\www\ns\app\lib\League\Plates\Engine.php on line 18
+Message: Class "Core\Factory" not found
+{
+    "Peak": "0.7422MB",
+    "Memory": "0.6988MB",
+    "Duration": "4.7791ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in H:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in H:/www/ns/NervSys/Core/Lib/Caller.php on line 52",
+        "app/controllers/home->index called",
+        "Nervsys/NS::Nervsys\\Core\\{closure} called in H:/www/ns/app/controllers/home.php on line 52",
+        "require called in H:/www/ns/NervSys/Core/System.php on line 96"
+    ]
+}
+

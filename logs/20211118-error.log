@@ -1,0 +1,26 @@
+2021-11-18 11:41:55
+Error: ParseError caught in H:\www\ns\app\contorllers\home.php on line 72
+Message: syntax error, unexpected 'var_dump' (T_STRING)
+{
+    "Peak": "0.7471MB",
+    "Memory": "0.7079MB",
+    "Duration": "5.0359ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called",
+        "class_exists called in H:/www/ns/NervSys/Core/Lib/Router.php on line 190",
+        "spl_autoload_call called",
+        "Core/Lib/App::Core\\Lib\\{closure} called",
+        "autoload called in H:/www/ns/NervSys/Core/Lib/App.php on line 69"
+    ]
+}
+

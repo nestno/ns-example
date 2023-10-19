@@ -1,0 +1,654 @@
+2021-12-31 09:10:58
+Error: Error caught in H:\www\ns\app\contorllers\home.php on line 39
+Message: Call to a member function query() on null
+{
+    "Peak": "0.8201MB",
+    "Memory": "0.7806MB",
+    "Duration": "60.5969ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->index called"
+    ]
+}
+
+2021-12-31 09:11:18
+Error: Error caught in H:\www\ns\app\contorllers\home.php on line 39
+Message: Call to undefined method Ext\libPDO::query()
+{
+    "Peak": "0.8211MB",
+    "Memory": "0.7816MB",
+    "Duration": "9.042ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->index called"
+    ]
+}
+
+2021-12-31 09:12:00
+Error: Error caught in H:\www\ns\app\contorllers\home.php on line 39
+Message: Call to undefined method Ext\libPDO::query()
+{
+    "Peak": "0.8211MB",
+    "Memory": "0.7816MB",
+    "Duration": "7.7ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->index called"
+    ]
+}
+
+2021-12-31 22:02:40
+Error: ArgumentCountError caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 74
+Message: Too few arguments to function Ext\libSockOnRedis::__construct(), 0 passed in H:\www\ns\NervSys\Core\Factory.php on line 82 and at least 2 expected
+{
+    "Peak": "0.9571MB",
+    "Memory": "0.8791MB",
+    "Duration": "16.932ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "1153a020c4edfac6",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Core/Factory::new called in H:/www/ns/app/contorllers/sSock.php on line 32",
+        "Core/Factory::getObj called in H:/www/ns/NervSys/Core/Factory.php on line 60",
+        "Ext/libSockOnRedis->__construct called in H:/www/ns/NervSys/Core/Factory.php on line 82"
+    ]
+}
+
+2021-12-31 22:07:33
+Error: ArgumentCountError caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 74
+Message: Too few arguments to function Ext\libSockOnRedis::__construct(), 0 passed in H:\www\ns\NervSys\Core\Factory.php on line 82 and at least 2 expected
+{
+    "Peak": "0.9569MB",
+    "Memory": "0.879MB",
+    "Duration": "11.3251ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "9227ccf74ed7258a",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Core/Factory::new called in H:/www/ns/app/contorllers/sSock.php on line 32",
+        "Core/Factory::getObj called in H:/www/ns/NervSys/Core/Factory.php on line 60",
+        "Ext/libSockOnRedis->__construct called in H:/www/ns/NervSys/Core/Factory.php on line 82"
+    ]
+}
+
+2021-12-31 22:09:56
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 33
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7753MB",
+    "Memory": "0.7363MB",
+    "Duration": "9.902ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "dc2255d412826439",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:11:26
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 33
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7753MB",
+    "Memory": "0.7363MB",
+    "Duration": "10.6721ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "cafba88fe54147a2",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:11:41
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 33
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7753MB",
+    "Memory": "0.7363MB",
+    "Duration": "10.668ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "f5f78ecd392f68e3",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:13:12
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 33
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7758MB",
+    "Memory": "0.7368MB",
+    "Duration": "11.565ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "a627d52e50a7cb93",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:24:01
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 35
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7756MB",
+    "Memory": "0.7366MB",
+    "Duration": "17.0679ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "021e1395d9007294",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:24:26
+Error: ParseError caught in H:\www\ns\app\contorllers\sSock.php on line 37
+Message: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+{
+    "Peak": "0.7685MB",
+    "Memory": "0.7301MB",
+    "Duration": "15.913ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/Ext/libMPC.php on line 350",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called",
+        "class_exists called in H:/www/ns/NervSys/Core/Lib/Router.php on line 190",
+        "spl_autoload_call called",
+        "Core/Lib/App::Core\\Lib\\{closure} called",
+        "autoload called in H:/www/ns/NervSys/Core/Lib/App.php on line 69"
+    ]
+}
+
+2021-12-31 22:29:38
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 35
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7761MB",
+    "Memory": "0.7372MB",
+    "Duration": "13.3731ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "8fd80ae3dbd0f053",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:29:58
+Error: ParseError caught in H:\www\ns\app\contorllers\sSock.php on line 39
+Message: syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ','
+{
+    "Peak": "0.7685MB",
+    "Memory": "0.7301MB",
+    "Duration": "12.3401ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/Ext/libMPC.php on line 350",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called",
+        "class_exists called in H:/www/ns/NervSys/Core/Lib/Router.php on line 190",
+        "spl_autoload_call called",
+        "Core/Lib/App::Core\\Lib\\{closure} called",
+        "autoload called in H:/www/ns/NervSys/Core/Lib/App.php on line 69"
+    ]
+}
+
+2021-12-31 22:30:22
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 36
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7764MB",
+    "Memory": "0.7375MB",
+    "Duration": "11.7919ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "54b068aabb3437c0",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:31:30
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 37
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7764MB",
+    "Memory": "0.7375MB",
+    "Duration": "11.831ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "1d887867f45b8771",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:32:00
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 37
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7764MB",
+    "Memory": "0.7375MB",
+    "Duration": "12.641ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "ae128139a244d5f9",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:33:46
+Error: Error caught in H:\www\ns\app\contorllers\sSock.php on line 37
+Message: Typed property app\contorllers\sSock::$sock must not be accessed before initialization
+{
+    "Peak": "0.7764MB",
+    "Memory": "0.7375MB",
+    "Duration": "11.549ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "9de283d1eec2055d",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called"
+    ]
+}
+
+2021-12-31 22:37:17
+Error: Error caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 222
+Message: Typed property Ext\libSockOnRedis::$libMPC must not be accessed before initialization
+{
+    "Peak": "0.966MB",
+    "Memory": "0.89MB",
+    "Duration": "11.3311ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "fca94495b5395467",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Ext/libSocket->sendMsg called in H:/www/ns/app/contorllers/sSock.php on line 40",
+        "Ext/libSockOnRedis->close called in H:/www/ns/NervSys/Ext/libSocket.php on line 365"
+    ]
+}
+
+2021-12-31 22:42:48
+Error: Error caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 222
+Message: Typed property Ext\libSockOnRedis::$libMPC must not be accessed before initialization
+{
+    "Peak": "0.9566MB",
+    "Memory": "0.8932MB",
+    "Duration": "17.9138ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "dc573076f1f54631",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Ext/libSocket->sendMsg called in H:/www/ns/app/contorllers/sSock.php on line 39",
+        "Ext/libSockOnRedis->close called in H:/www/ns/NervSys/Ext/libSocket.php on line 365"
+    ]
+}
+
+2021-12-31 22:47:57
+Error: Error caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 222
+Message: Typed property Ext\libSockOnRedis::$handler_class must not be accessed before initialization
+{
+    "Peak": "0.9972MB",
+    "Memory": "0.9583MB",
+    "Duration": "282.1832ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "7db3720789470207",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Ext/libSocket->sendMsg called in H:/www/ns/app/contorllers/sSock.php on line 41",
+        "Ext/libSockOnRedis->close called in H:/www/ns/NervSys/Ext/libSocket.php on line 365"
+    ]
+}
+
+2021-12-31 22:49:36
+Error: Error caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 222
+Message: Typed property Ext\libSockOnRedis::$libMPC must not be accessed before initialization
+{
+    "Peak": "0.9568MB",
+    "Memory": "0.8935MB",
+    "Duration": "18.2641ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "2082eae29322821e",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Ext/libSocket->sendMsg called in H:/www/ns/app/contorllers/sSock.php on line 41",
+        "Ext/libSockOnRedis->close called in H:/www/ns/NervSys/Ext/libSocket.php on line 365"
+    ]
+}
+
+2021-12-31 22:50:17
+Error: Error caught in H:\www\ns\NervSys\Ext\libSockOnRedis.php on line 223
+Message: Typed property Ext\libSockOnRedis::$redis must not be accessed before initialization
+{
+    "Peak": "0.9981MB",
+    "Memory": "0.9592MB",
+    "Duration": "273.8991ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "1a14ef86df91dd20",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "Ext/libSocket->sendMsg called in H:/www/ns/app/contorllers/sSock.php on line 43",
+        "Ext/libSockOnRedis->close called in H:/www/ns/NervSys/Ext/libSocket.php on line 365"
+    ]
+}
+

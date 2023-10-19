@@ -1,0 +1,44 @@
+2021-11-26 17:44:43
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 191
+Message: "index" NOT found!
+{
+    "Peak": "0.7439MB",
+    "Memory": "0.7047MB",
+    "Duration": "227.7851ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "index/loadradio",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+
+2021-11-26 17:44:43
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7814MB",
+    "Memory": "0.7451MB",
+    "Duration": "295.2011ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "index/loadradio",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+

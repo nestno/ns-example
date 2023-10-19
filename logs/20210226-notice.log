@@ -1,0 +1,72 @@
+2021-02-26 15:42:45
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 48
+Message: Undefined index: home
+{
+    "Peak": "0.761MB",
+    "Memory": "0.7214MB",
+    "Duration": "266.88ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 48"
+    ]
+}
+
+2021-02-26 15:42:54
+Notice: LogicException caught in H:\www\ns\app\lib\League\Plates\Template\Template.php on line 145
+Message: The template "home/tabbar" could not be found at "H:\www\ns/app/views\home/tabbar.php".
+{
+    "Peak": "0.9227MB",
+    "Memory": "0.8831MB",
+    "Duration": "14.3752ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "app/lib/output->index called in H:/www/ns_vendor/NS.php on line 154",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "League/Plates/Template/Template->insert called in H:/www/ns/app/views/home/index.php on line 6",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 289",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278"
+    ]
+}
+
+2021-02-26 15:45:13
+Notice: LogicException caught in H:\www\ns\app\lib\League\Plates\Template\Template.php on line 145
+Message: The template "home/tabbar" could not be found at "H:\www\ns/app/views\home/tabbar.php".
+{
+    "Peak": "0.8803MB",
+    "Memory": "0.8045MB",
+    "Duration": "14.034ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/api.php on line 28",
+        "Core/Lib/IOUnit->output called in H:/www/ns_vendor/NS.php on line 146",
+        "call_user_func called in H:/www/ns_vendor/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/output.php on line 49",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278",
+        "include called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 154",
+        "League/Plates/Template/Template->insert called in H:/www/ns/app/views/home/index.php on line 6",
+        "League/Plates/Engine->render called in H:/www/ns/app/lib/League/Plates/Template/Template.php on line 289",
+        "League/Plates/Template/Template->render called in H:/www/ns/app/lib/League/Plates/Engine.php on line 278"
+    ]
+}
+

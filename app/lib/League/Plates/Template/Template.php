@@ -68,6 +68,7 @@ class Template
     public function __construct(Engine $engine, $name)
     {
         $this->engine = $engine;
+
         $this->name = new Name($engine, $name);
 
         $this->data($this->engine->getData($name));
@@ -218,7 +219,6 @@ class Template
     public function push($name)
     {
         $this->appendSection = true;
-
         $this->start($name);
     }
 

@@ -1,0 +1,9 @@
+Post https://ns.ab.com/api.php/c/go
+
+content-type:application/json
+
+{
+    "name":"kaibin",
+    "age":31,
+    "height":1.6
+}

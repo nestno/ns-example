@@ -1,0 +1,403 @@
+2021-12-31 16:29:07
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7767MB",
+    "Memory": "0.7378MB",
+    "Duration": "11.7261ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "eed87d2f363a968e",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:33:01
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7768MB",
+    "Memory": "0.7378MB",
+    "Duration": "10.4079ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "56fa9ccdcf39aa38",
+            "msg": "23"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:33:05
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7768MB",
+    "Memory": "0.7378MB",
+    "Duration": "10.406ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "56fa9ccdcf39aa38",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:35:23
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7768MB",
+    "Memory": "0.7378MB",
+    "Duration": "15.3708ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "7c4bcd2fd6712f50",
+            "msg": "124"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:43:07
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 49
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7386MB",
+    "Duration": "16.1581ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "77e59b6e0bb0718e",
+            "msg": "5678"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 49"
+    ]
+}
+
+2021-12-31 16:49:57
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 48
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.7389MB",
+    "Duration": "13.3178ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "5b5273d7f10ebda9",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 48"
+    ]
+}
+
+2021-12-31 16:49:57
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 48
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.7389MB",
+    "Duration": "13.2911ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "5b5273d7f10ebda9",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 48"
+    ]
+}
+
+2021-12-31 16:49:57
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 48
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.739MB",
+    "Duration": "11.0879ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "5b5273d7f10ebda9",
+            "msg": "123123123123123123123123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 48"
+    ]
+}
+
+2021-12-31 16:55:17
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 49
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "16.2139ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 49"
+    ]
+}
+
+2021-12-31 16:55:17
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 49
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "15.9819ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 49"
+    ]
+}
+
+2021-12-31 16:55:17
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 49
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "15.7239ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "123123123123123123123123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 49"
+    ]
+}
+
+2021-12-31 22:11:36
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 45
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.777MB",
+    "Memory": "0.738MB",
+    "Duration": "10.479ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "cafba88fe54147a2",
+            "msg": "123"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 45"
+    ]
+}
+
+2021-12-31 22:13:26
+Warning: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 46
+Message: Cannot use a scalar value as an array
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7385MB",
+    "Duration": "10.5028ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "a627d52e50a7cb93",
+            "msg": "124"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 46"
+    ]
+}
+

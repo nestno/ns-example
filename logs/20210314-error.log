@@ -1,0 +1,16 @@
+2021-03-14 15:36:09
+Error: Error caught in H:\www\ns\api.php on line 29
+Message: Class 'app\lib\output' not found
+{
+    "Peak": "0.7531MB",
+    "Memory": "0.7141MB",
+    "Duration": "6.4211ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": []
+}
+

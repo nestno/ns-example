@@ -1,0 +1,924 @@
+<html dir="ltr" lang="zh"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>貸款申請書 Application Form</title>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" media="all" href="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/jquery/ui/css/bw/jquery-ui-1.10.4.custom.min.css?ver=1.10.4">
+  <link rel="stylesheet" type="text/css" media="all" href="https://loan21.softmediahk.com:443/swiss_finance_ltd2/css/jquery-ui-custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/bootstrap/css/bootstrap.css?ver=2.3.2">
+  <link rel="stylesheet" type="text/css" media="all" href="https://loan21.softmediahk.com:443/swiss_finance_ltd2/css/bootstrap-custom.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://loan21.softmediahk.com:443/swiss_finance_ltd2/css/main.css">
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/jquery/core/jquery-1.11.1.js?ver=1.11.1"></script>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/jquery/ui/js/jquery-ui-1.10.4.custom.min.js?ver=1.10.4"></script>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/jquery/plugins/validate/jquery.validate.js?ver=1.13.0"></script>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/bootstrap/js/bootstrap.min.js?ver=2.3.2"></script>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/jquery/plugins/misc.js"></script>
+  <script type="text/javascript" src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/js/phpjs.js"></script>
+  <script type="text/javascript">
+    var auto_validation = false;
+
+    $(function() {
+      /*------------------------------
+       |	form validation
+       |------------------------------*/
+      // default settings
+      $.validator.setDefaults({
+        ignore: ':hidden, .ignore',
+        onfocusout: function(element) {
+          if (!auto_validation) return;
+          if (!this.checkable(element) && (element.name in this.submitted || !this.optional(element))) {
+            $(element.form).valid();
+          }
+        },
+        onkeyup: function(element, event) {
+          if (!auto_validation) return;
+          if (event.which === 9 && this.elementValue(element) === '') {
+            return;
+          }
+          else if (element.name in this.submitted || element === this.lastElement) {
+            $(element.form).valid();
+          }
+        },
+        onclick: function(element) {
+          if (!auto_validation) return;
+          if (element.name in this.submitted) {
+            $(element.form).valid();
+          }
+          else if (element.parentNode.name in this.submitted) {
+            $(element.parentNode.form).valid();
+          }
+        },
+        errorPlacement: function(error, element) {
+          $(element).closest('.control-group').addClass('error');
+          show_validation_message();
+        },
+        unhighlight: function(element, errorClass) {
+          if ($(element).closest('.controls').find('[aria-invalid=true]').length == 0) {
+            $(element).closest('.control-group').removeClass('error');
+            show_validation_message();
+          }
+        }
+      });
+
+
+      // regular expression
+      $.validator.addMethod('regex', function(value, element, regexp) {
+        var re = new RegExp(regexp);
+        return this.optional(element) || re.test(value);
+      }, 'Regex mismatch');
+
+
+      // overriding min & max (detect thousand separator)
+      $.validator.addMethod('min', function(value, element, min_value) {
+        return this.optional(element) || num(value) >= num(min_value);
+      });
+      $.validator.addMethod('max', function(value, element, max_value) {
+        return this.optional(element) || num(value) <= num(max_value);
+      });
+
+
+      // nonzero
+      $.validator.addMethod('nonzero', function(value, element) {
+        return this.optional(element) || num(value) > 0;
+      }, 'Value should be greater than 0');
+
+
+      // date
+      $.validator.addMethod('mydate', function(value, element) {
+        // format
+        var is_valid = /^(\d{4})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/i.test(value);
+
+        // check date available
+        if (is_valid) {
+          var segments = value.toString().split('-');
+          if (segments[1] == 2) {
+            var is_leap = (segments[0] % 4 == 0 && (segments[0] % 100 != 0 || segments[0] % 400 == 0));
+            if (segments[2] > 29 || (segments[2] == 29 && !is_leap)) {
+              is_valid = false;
+            }
+          }
+          else if ((segments[1] == 4 || segments[1] == 6 || segments[1] == 9 || segments[1] == 11) && segments[2] > 30) {
+            is_valid = false;
+          }
+        }
+        return this.optional(element) || is_valid;
+      }, 'Invalid date format');
+
+
+      // hkid
+      $.validator.addMethod('hkid', function(value, element) {
+        // format AA123456 must have brackets
+        var is_valid = /^[A-Z]{1,2}[0-9]{6}$/i.test(value);
+
+        // check digit
+        if (is_valid) {
+          var weight = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          var sum = 0;
+          var hkid = pad(value.toUpperCase(), 8, ' ');
+          var check_digit = $('#' + $(element).attr('id') + '_check_digit').val();
+          var multiplier = hkid.length + 1;
+          for (var i = 0; i < hkid.length; i++) {
+            var character = hkid.charAt(i);
+            var idx = ((character == ' ' && i == 0 && hkid.length == 8) ? 36 : weight.indexOf(character));
+            sum = sum + idx * multiplier--;
+          }
+          var result = ((11 - (sum % 11) == 10) ? 'A' : ((11 - (sum % 11)) % 11));
+          is_valid = (result == check_digit);
+        }
+        return this.optional(element) || is_valid;
+      }, 'Invalid HKID');
+
+
+      // adult
+      $.validator.addMethod('adult', function(value, element) {
+        return this.optional(element) || year_till_date(value) >= 18;
+      }, 'Must be adult (age 18 or above)');
+
+
+      // form depends
+      $.validator.addMethod('form_depends', function(value, element) {
+        var no_of_filled = $(element).closest('.record').find('input:text, textarea, input:checked, select:not([id*="partaker_type"]) option[value!=""]:selected').filter(function() { return this.value; }).length;
+        return (no_of_filled == 0 || (no_of_filled > 0 && $(element).val() != ''));
+      }, 'Must be filled');
+
+
+      // default error messages
+      $.extend($.validator.messages, {
+        required: ' is required and cannot be empty<br />是必須填寫項目',
+        number: ' is not a number<br />不是一個數字',
+        digits: ' is not a number<br />不是一個數字',
+        min: ' should be greater than {0}<br />的數值必須大於 {0}',
+        mydate: ' must be formatted as (YYYY-MM-DD)<br />的正確格式為 (YYYY-MM-DD)',
+        email: ' is invalid<br />是無效的',
+        hkid: ' is invalid<br />是無效的',
+        adult: ' must be above 18 years old<br />必須年滿 18 歲',
+        form_depends: ' is required and cannot be empty<br />是必須填寫項目'
+      });
+
+
+      $(document).on('blur keyup', 'input[id*=_check_digit]', function() {
+        $('#' + $(this).attr('id').replace('_check_digit', '')).blur();
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      /*------------------------------
+       |	step button
+       |------------------------------*/
+      $('#prev-button').click(function() {
+        var current_step = $('fieldset.step.current');
+        var prev_step = current_step.prev('fieldset.step');
+
+        auto_validation = false;
+        $('#message-holder').html('');
+
+        // buttons
+        if (prev_step.prev('fieldset.step').length == 0) {
+          $(this).hide();
+          $('#next-button').show();
+        }
+        if (prev_step.next('fieldset.step').length > 0) {
+          $('#finish-button').hide();
+          $('#next-button').show();
+        }
+
+        current_step.removeClass('current').hide();
+        prev_step.addClass('current').show();
+
+        $('body').scrollTop(0);
+        $(this).blur();
+      });
+
+      $('#next-button').click(function() {
+        var current_step = $('fieldset.step.current');
+        var next_step = current_step.next('fieldset.step');
+
+        // validate current step (validate check only visible fields)
+        if (!$('#main-form').valid()) {
+          auto_validation = true;
+          return false;
+        }
+        else {
+          auto_validation = false;
+          $('#message-holder').html('');
+        }
+
+
+        // buttons
+        if (next_step.next('fieldset.step').length == 0) {
+          $(this).hide();
+          $('#finish-button').show();
+        }
+        else {
+          $('#finish-button').hide();
+        }
+        if (next_step.prev('fieldset.step').length > 0) {
+          $('#prev-button').show();
+        }
+
+        current_step.removeClass('current').hide();
+        next_step.addClass('current').show();
+
+        $('body').scrollTop(0);
+        $(this).blur();
+      });
+
+      $('#finish-button').click(function() {
+        if (!$('#main-form').valid()) {
+          auto_validation = true;
+          return false;
+        }
+        else {
+          auto_validation = false;
+          $('#message-holder').html('');
+        }
+
+        // spinner
+        show_message('spinner');
+        $(this).blur();
+
+        // create data string
+        var param = $('#main-form').find('input, textarea, select').filter(':not([name*="_template_"])').serialize();
+        var data = {
+        };
+        param += '&' + $.param(data);
+
+        // save to server
+        $.ajax({
+          type: 'POST',
+          global: true,
+          url: '?type=save',
+          data: param,
+          dataType: 'json',
+          success: function(response) {
+            // delay 1 second
+            setTimeout(function() {
+              // keep successful message
+              show_message('success', 'Data received, please return this device.<br />資料已接收，請交回此機。');
+            }, 1000);
+          },
+          error: function() {
+            // display error message
+            show_message('error', 'Error occur, please ask for technical assist.<br />發生錯誤，請尋求技術協助。');
+          }
+        });
+      });
+
+
+
+      /*------------------------------
+       |	template
+       |------------------------------*/
+      $('a[name="add-new-button"]').click(function() {
+        var current_step = $(this).closest('fieldset.step');
+        var template = current_step.find('.template').clone();
+
+        // make template into record unit
+        var record_id = uniqid();
+        template.removeClass('template hide').addClass('record').html(template.html().replace(/template/g, record_id)).attr('id', record_id);
+        $('<input type="hidden" name="' + current_step.attr('id').replace('_information', '[]') + '" value="' + record_id + '" />').appendTo(template);
+
+        $(template).find('.record-label').popover({
+          html: true,
+          placement: 'right',
+          trigger: 'manual',
+          content: '<button class="btn btn-small btn-danger" type="button" onClick="$(this).closest(\'.record\').fadeOut(400, function() { $(this).remove(); if (auto_validation) { $(\'#message-holder\').html(\'\'); $(\'#main-form\').valid(); }});" style="line-height: 1.2;">確定<br />Yes</button>&nbsp;&nbsp;<button class="btn btn-small" type="button" onClick="$(this).closest(\'.popover\').each(function(){ $(this.previousSibling).popover(\'hide\'); });" style="line-height: 1.2;">取消<br />No</button>'
+        }).mousedown(function() {
+          $(this).popover('toggle');
+        });
+
+        current_step.find('.holder').append(template);
+
+
+        $(this).blur();
+      });
+
+      // solution for hiding when click outside popovers
+      $('html').on('mouseup', function(e) {
+        if ($(e.target).hasClass('record-label')) {
+          if ($(e.target).next('.popover').hasClass('in')) {
+            return false;
+          }
+        }
+
+        if (!$(e.target).closest('.popover').length) {
+          $('.record .popover').each(function(){
+            $(this.previousSibling).popover('hide');
+          });
+        }
+      });
+
+
+      // address
+      $(document).on('blur', 'textarea[id*="address"]', function() {
+        var lines = $(this).val().split("\n");
+        var address = '';
+        for (var i = 0; i < lines.length; i++) {
+          address += (address == '' ? '' : "\n") + $.trim(lines[i]);
+        }
+        $(this).val(address);
+      });
+
+
+      // HKID
+      $(document).on('keyup', '[id$=passport_no]', function(e) {
+        var prefix = $(this).attr('id').replace('passport_no', '');
+        // do only when letter / number key is press
+        if ((e.keyCode > 47 && e.keyCode < 58) || (e.keyCode > 64 && e.keyCode < 91) || (e.keyCode > 95 && e.keyCode < 112)) {
+          hkid_bracekets(prefix);
+        }
+      }).on('blur', '[id$=passport_no]', function() {
+        // trim all spaces
+        $(this).val($(this).val().replace(/\s/g, ''));
+
+        var prefix = $(this).attr('id').replace('passport_no', '');
+        hkid_bracekets(prefix);
+      });
+
+
+      // third party
+      $('input:radio[name=third_party]').click(function() {
+        if ($(this).val() == '1') {
+          $('#third_party_detail').show();
+        }
+        else {
+          $('#agent_id, #agent_address, #agent_relation').val('');
+          $('#third_party_detail').hide();
+        }
+      });
+
+
+
+      /*------------------------------
+       |	form validation
+       |------------------------------*/
+      main_form_validator = $('#main-form').validate({
+        rules: {
+          'tnc_agree': {
+            required: true
+          }
+        },
+        messages: {
+          'tnc_agree': {
+            required: 'You must agree to the Terms and Conditions.<br />你必須同意以上條款及細則。'
+          }
+        }
+      });
+
+
+
+      /*------------------------------
+       |	general
+       |------------------------------*/
+      $(window).bind('beforeunload', function() {
+        return 'Filled data will be cleared.\n已填寫的資料將會全部清除';
+      });
+
+
+
+      /*------------------------------
+       |	initiate
+       |------------------------------*/
+      $('fieldset.step').each(function() {
+        $('a[name="add-new-button"]', this).click();
+      });
+    });
+
+
+    function uniqid() {
+      var _alphabet = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var _length = 8;
+      var uid = '';
+      for (var i = 0; i < _length; i++) {
+        uid += _alphabet.charAt(Math.floor(Math.random() * _alphabet.length));
+      }
+      return uid;
+    }
+
+
+    function pad(number, length, character) {
+      var str = '' + number;
+      character = (typeof character == 'undefined' ? '0' : character)
+      while (str.length < length) {
+        str = character + str;
+      }
+      return str;
+    }
+
+
+    function num(str, decimal) {
+      if (typeof str == 'undefined') return 0;
+
+      var m = Math.pow(10, 0);
+      var value = Math.floor((Number(str.toString().replace(/,/g, '')) * m).toPrecision(14)) / m;
+
+      if (typeof decimal != 'undefined') {
+        return number_format(value, decimal, '.', ',');
+      }
+      else {
+        return value;
+      }
+    }
+
+
+    function hkid_bracekets(prefix) {
+      if (typeof prefix == 'undefined') prefix = '';
+
+      var value = $('#' + prefix + 'passport_no').val();
+      var result = value.toUpperCase();
+
+      if (result != value) {
+        $('#' + prefix + 'passport_no').val(result);
+      }
+    }
+
+
+    function year_till_date(from_date) {
+      var is_valid = /^(\d{4})-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/i.test(from_date);
+      if (!is_valid) {
+        return '';
+      }
+
+      var from_date = from_date.split('-');
+      var today_date = date('Y-m-d').split('-');
+
+      var num_years = today_date[0] - from_date[0];
+      var num_months = today_date[1] - from_date[1];
+      if (num_months < 0 || (num_months === 0 && today_date[2] < from_date[2])) {
+        num_years--;
+      }
+
+      return Math.floor(num_years);
+    }
+
+
+    function show_message(type, message) {
+      switch (type) {
+        // form message
+        case 'spinner':
+          $('#message-modal .media').html('<div class="pull-left"><img src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/img/icons/loading.gif" alt="" /></div><div class="media-body">Data processing, please wait...<br />資料傳送中，請稍候…</div>');
+          break;
+
+        case 'error':
+          $('#message-modal .media').html('<div class="pull-left"><img src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/img/icons/error32.png" alt="" /></div><div class="media-body">' + message + '</div>');
+          break;
+
+        case 'success':
+          $('#message-modal .media').html('<div class="pull-left"><img src="https://loan21.softmediahk.com:443/swiss_finance_ltd2/img/icons/tick32.png" alt="" /></div><div class="media-body">' + message + '</div>');
+          break;
+      }
+
+      $('#message-modal').modal({ keyboard: false, show: true });
+      $('.modal-backdrop').off('click');
+    }
+
+
+    function show_validation_message() {
+      // group all error message into one area
+      var error_msg = new Array();
+      var error_list = main_form_validator.invalid;
+
+      $.each(error_list, function(key, value) {
+        if ($('[name="' + key + '"]').closest('.control-group').find('.control-label').length == 0) {
+          var titles = ['', ''];
+        }
+        else {
+          var titles = $('[name="' + key + '"]').closest('.control-group').find('.control-label').html().split('<br>');
+        }
+        var message = value.toString().split('<br />');
+
+        var eng_msg = (titles[0] + message[0]);
+        var chi_msg = (titles[1] + message[1]);
+
+        error_msg[error_msg.length] = ('<li>' + chi_msg + '&nbsp;&nbsp;&nbsp;' + eng_msg + '</li>');
+      });
+
+      if (error_msg.length > 0) {
+        // remove duplicate message
+        $('#message-holder').html('<div class="alert alert-error fade in"><a class="close" data-dismiss="alert">&times;</a><ul style="margin-bottom: 0;">' + $.unique(error_msg).join('') + '</ul></div>');
+      }
+      else {
+        $('#message-holder').html('');
+      }
+    }
+  </script>
+  <style type="text/css">
+    body {
+      padding-top: 20px;
+      background-color: transparent;
+      font-family: "Helvetica Neue", Helvetica, "微軟正黑體", sans-serif;
+    }
+    textarea, select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"],
+    input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+      border: 1px solid #cccccc;
+    }
+    .form-horizontal .control-label {
+      font-size: 12px;
+      line-height: 1.2;
+      padding: 0;
+    }
+    .form-horizontal input + .help-block,
+    .form-horizontal select + .help-block,
+    .form-horizontal textarea + .help-block,
+    .form-horizontal .uneditable-input + .help-block,
+    .form-horizontal .input-prepend + .help-block,
+    .form-horizontal .input-append + .help-block {
+      margin-top: 0;
+    }
+    .form-horizontal .help-block label {
+      line-height: 1.2;
+    }
+    .modal {
+      top: 20%;
+      width: 360px;
+      margin-left: -180px;
+    }
+    .step > .header {
+      width: 100%;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      z-index: 888;
+    }
+    .step > .header > span:first-child {
+      margin-left: 20px;
+    }
+    .step > .header > span:last-child {
+      margin-right: 20px;
+    }
+    .step > .body {
+      margin-top: 40px;
+    }
+    .step > .body > .holder > div {
+      position: relative;
+      margin-bottom: 29px;
+      padding: 39px 19px 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    .step > .body > .holder > div > .record-label {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      padding: 3px 7px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      color: #9da0a4;
+      cursor: pointer;
+      -webkit-border-radius: 4px 0 4px 0;
+      -moz-border-radius: 4px 0 4px 0;
+      border-radius: 4px 0 4px 0;
+    }
+
+
+    ::-webkit-input-placeholder {
+      font-size: 11px;
+      text-align: center;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      font-size: 11px;
+      text-align: center;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 11px;
+      text-align: center;
+    }
+    :-ms-input-placeholder {
+      font-size: 11px;
+      text-align: center;
+    }
+  </style>
+
+  <style type="text/css">
+    @font-face {
+      font-family: "element-icons";
+      src: url('chrome-extension://obmdkcloonecpcbaemghblffmeeboiog/fonts/element-icons.woff') format('woff'),
+      url('chrome-extension://obmdkcloonecpcbaemghblffmeeboiog/fonts/element-icons.ttf ') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    }
+  </style></head>
+<body>
+<div class="container-fluid" style="min-width: 660px;">
+  <form class="form-horizontal" id="main-form" name="main-form" method="post" novalidate="novalidate">
+    <fieldset class="step" id="apply_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">貸款資料 Loan Information</span>
+        <span class="pull-right" style="margin-right: 20px;">Part I</span>
+      </div>
+
+      <div class="body">
+        <div class="row-fluid"><div class="span6"><div class="control-group" id="loan_amount-control" style="position: relative;">	<label class="control-label" for="loan_amount">Loan Amount<br>貸款金額</label>	<div class="controls"><input class="span12 number required" min="1" data-decimal-place="0" id="loan_amount" name="loan_amount" type="number" value="" aria-required="true"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div><div class="span6"><div class="control-group" id="loan_installment-control" style="position: relative;">	<label class="control-label" for="loan_installment">Tenor<br>還款期</label>	<div class="controls"><input class="span12 number required" min="1" data-decimal-place="0" id="loan_installment" name="loan_installment" type="number" value="" aria-required="true"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="loan_type_id-control" style="position: relative;">	<label class="control-label" for="loan_type_id">Loan Type<br>貸款類別</label>	<div class="controls"><select class="span12  required" id="loan_type_id" name="loan_type_id" aria-required="true"><option value="">&nbsp;</option><option value="1">私人貸款</option><option value="2">樓宇按揭一按</option><option value="3">樓宇按揭二按</option><option value="4">循環貸款</option></select><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div><div class="span6"><div class="control-group" id="loan_purpose_id-control" style="position: relative;">	<label class="control-label" for="loan_purpose_id">Purpose of Loan<br>貸款用途</label>	<div class="controls"><select class="span12  " id="loan_purpose_id" name="loan_purpose_id"><option value="">&nbsp;</option><option value="6">現金周轉</option><option value="1">生意周轉</option><option value="3">生活開支</option><option value="2">清還債務</option><option value="4">購買物業</option><option value="5">其他</option></select><span class="help-block"></span></div></div></div></div><br>
+      </div>
+    </fieldset><!--apply_information-->
+
+
+    <fieldset class="hide step" id="borrower_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">借款人資料 Borrower</span>
+        <span class="pull-right">Part II</span>
+      </div>
+
+      <div class="body">
+        <legend>&nbsp;<span class="pull-left">個人資料 Personal Information</span></legend>
+        <div class="row-fluid"><div class="span8"><div class="control-group" id="name-control" style="position: relative;">	<label class="control-label" for="name">Name<br>姓名</label>	<div class="controls"><input class="span12 required" id="name" name="name" type="text" value="" aria-required="true"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div><div class="span4"><div class="control-group" id="gender-control" style="position: relative;">	<label class="control-label" for="gender">Gender<br>性別</label>	<div class="controls"><label class="radio inline"><input class="required" id="gender_m" name="gender" type="radio" value="m" aria-required="true">M</label>&nbsp;<label class="radio inline"><input class="required" id="gender_f" name="gender" type="radio" value="f" aria-required="true">F</label>&nbsp;<span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="passport_no-control" style="position: relative;">	<label class="control-label" for="passport_no">HKID<br>香港身份證號碼</label>	<div class="controls"><input class="span9 hkid required error" id="passport_no" name="passport_no" type="text" value="" maxlength="8" aria-required="true">
+        <input class="span3 ignore" id="passport_no_check_digit" name="passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div><div class="span6"><div class="control-group" id="birth_date-control" style="position: relative;">	<label class="control-label" for="birth_date">Birth Date<br>出生日期</label>	<div class="controls"><input class="span12 mydate required adult" id="birth_date" name="birth_date" type="date" value="" placeholder="YYYY-MM-DD" aria-required="true"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mobile_no-control" style="position: relative;">	<label class="control-label" for="mobile_no">Mobile No.<br>手提號碼</label>	<div class="controls"><input class="span12 required" id="mobile_no" name="mobile_no" type="tel" value="" aria-required="true"><span class="help-block"></span></div>	<span class="asterisk" style="position: absolute; top: 8px; left: 108px;">*</span></div></div><div class="span6"><div class="control-group" id="mobile_no2-control" style="position: relative;">	<label class="control-label" for="mobile_no2">Mobile No. 2<br>手提號碼 2</label>	<div class="controls"><input class="span12 " id="mobile_no2" name="mobile_no2" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mobile_no3-control" style="position: relative;">	<label class="control-label" for="mobile_no3">Mobile No. 3<br>手提號碼 3</label>	<div class="controls"><input class="span12 " id="mobile_no3" name="mobile_no3" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="home_no-control" style="position: relative;">	<label class="control-label" for="home_no">Home No.<br>住宅號碼</label>	<div class="controls"><input class="span12 " id="home_no" name="home_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="email-control" style="position: relative;">	<label class="control-label" for="email">Email<br>電郵地址</label>	<div class="controls"><input class="span12 email " id="email" name="email" type="email" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="marital_status-control" style="position: relative;">	<label class="control-label" for="marital_status">Marital Status<br>婚姻狀態</label>	<div class="controls"><select class="span12  " id="marital_status" name="marital_status"><option value="">&nbsp;</option><option value="single">單身</option><option value="married">已婚</option><option value="separated">分居</option><option value="divorce">離婚</option><option value="widowed">喪偶</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="education-control" style="position: relative;">	<label class="control-label" for="education">Education Level<br>教育程度</label>	<div class="controls"><select class="span12  " id="education" name="education"><option value="">&nbsp;</option><option value="primary">小學</option><option value="secondary">中學</option><option value="university">大專或以上</option></select><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="flat_address-control" style="position: relative;">	<label class="control-label" for="flat_address">Flat Address<br>住宅地址</label>	<div class="controls"><textarea class="span12 " id="flat_address" name="flat_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="mailing_address-control" style="position: relative;">	<label class="control-label" for="mailing_address">Mailing Address<br>通訊地址</label>	<div class="controls"><textarea class="span12 " id="mailing_address" name="mailing_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="flat_type_id-control" style="position: relative;">	<label class="control-label" for="flat_type_id">Flat Type<br>住宅類型</label>	<div class="controls"><select class="span12  " id="flat_type_id" name="flat_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="occupy_from-control" style="position: relative;">	<label class="control-label" for="occupy_from">Occupy From<br>居住由</label>	<div class="controls"><input class="span12 mydate  " id="occupy_from" name="occupy_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="occupy_with-control" style="position: relative;">	<label class="control-label" for="occupy_with">Occupy With<br>同住人</label>	<div class="controls"><div class="row-fluid" style="margin: 0;"><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_parent" name="occupy_with[]" type="checkbox" value="parent">Parent<br>父母</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_spouse" name="occupy_with[]" type="checkbox" value="spouse">Spouse<br>配偶</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_child" name="occupy_with[]" type="checkbox" value="child">Child<br>子女</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_sibling" name="occupy_with[]" type="checkbox" value="sibling">Sibling<br>兄弟姊妹</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_self" name="occupy_with[]" type="checkbox" value="self">Self<br>自住</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="occupy_with_other" name="occupy_with[]" type="checkbox" value="other">Other<br>其他</label></div></div><span class="help-block"></span></div></div></div></div><br>
+
+        <legend>&nbsp;<span class="pull-left">工作資料 Employment Information</span></legend>
+        <div class="row-fluid"><div class="span12"><div class="control-group" id="company_name-control" style="position: relative;">	<label class="control-label" for="company_name">Company Name<br>公司名稱</label>	<div class="controls"><input class="span12 " id="company_name" name="company_name" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="company_address-control" style="position: relative;">	<label class="control-label" for="company_address">Office Address<br>公司地址</label>	<div class="controls"><textarea class="span12 " id="company_address" name="company_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="office_no-control" style="position: relative;">	<label class="control-label" for="office_no">Office No.<br>公司電話</label>	<div class="controls"><input class="span12 " id="office_no" name="office_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="direct_line_no-control" style="position: relative;">	<label class="control-label" for="direct_line_no">Direct Line No.<br>直線電話 </label>	<div class="controls"><input class="span12 " id="direct_line_no" name="direct_line_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="fax_no-control" style="position: relative;">	<label class="control-label" for="fax_no">Fax No.<br>傳真號碼</label>	<div class="controls"><input class="span12 " id="fax_no" name="fax_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="industry-control" style="position: relative;">	<label class="control-label" for="industry">Industry<br>行業</label>	<div class="controls"><input class="span12 " id="industry" name="industry" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="department-control" style="position: relative;">	<label class="control-label" for="department">Department<br>部門</label>	<div class="controls"><input class="span12 " id="department" name="department" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="position-control" style="position: relative;">	<label class="control-label" for="position">Position<br>職位</label>	<div class="controls"><input class="span12 " id="position" name="position" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="employment_type-control" style="position: relative;">	<label class="control-label" for="employment_type">Employment Type<br>受聘方式</label>	<div class="controls"><input class="span12 " id="employment_type" name="employment_type" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="work_from-control" style="position: relative;">	<label class="control-label" for="work_from">Employed Date<br>入職日期</label>	<div class="controls"><input class="span12 mydate  " id="work_from" name="work_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="salary-control" style="position: relative;">	<label class="control-label" for="salary">Monthly Salary<br>每月收入</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="salary" name="salary" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="hide step" id="joint_name_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">聯名人資料 Joint Name</span>
+        <span class="pull-left" style="margin-left: 15px; font-size: 80%;"><a name="add-new-button" href="javascript:void(0)">新增資料 Add Record</a></span>
+        <span class="pull-right">Part III</span>
+      </div>
+
+      <div class="body">
+        <div class="holder"><div class="record" id="AkllmIXo">
+          <span class="record-label" data-original-title="" title="">刪除 Delete</span>
+          <legend>&nbsp;<span class="pull-left">個人資料 Personal Information</span></legend>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_relation-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_relation">Relationship<br>關係</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_relation" name="joint_name_AkllmIXo_relation" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span8"><div class="control-group" id="joint_name_AkllmIXo_name-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_name">Name<br>姓名</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_name" name="joint_name_AkllmIXo_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="joint_name_AkllmIXo_gender-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_gender">Gender<br>性別</label>	<div class="controls"><label class="radio inline"><input class="" id="joint_name_AkllmIXo_gender_m" name="joint_name_AkllmIXo_gender" type="radio" value="m">M</label>&nbsp;<label class="radio inline"><input class="" id="joint_name_AkllmIXo_gender_f" name="joint_name_AkllmIXo_gender" type="radio" value="f">F</label>&nbsp;<span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_passport_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_passport_no">HKID<br>香港身份證號碼</label>	<div class="controls"><input class="span9 hkid " id="joint_name_AkllmIXo_passport_no" name="joint_name_AkllmIXo_passport_no" type="text" value="" maxlength="8">
+          <input class="span3 ignore" id="joint_name_AkllmIXo_passport_no_check_digit" name="joint_name_AkllmIXo_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_birth_date-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_birth_date">Birth Date<br>出生日期</label>	<div class="controls"><input class="span12 mydate  adult" id="joint_name_AkllmIXo_birth_date" name="joint_name_AkllmIXo_birth_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_mobile_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_mobile_no">Mobile No.<br>手提號碼</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_mobile_no" name="joint_name_AkllmIXo_mobile_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_mobile_no2-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_mobile_no2">Mobile No. 2<br>手提號碼 2</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_mobile_no2" name="joint_name_AkllmIXo_mobile_no2" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_mobile_no3-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_mobile_no3">Mobile No. 3<br>手提號碼 3</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_mobile_no3" name="joint_name_AkllmIXo_mobile_no3" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_home_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_home_no">Home No.<br>住宅號碼</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_home_no" name="joint_name_AkllmIXo_home_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_email-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_email">Email<br>電郵地址</label>	<div class="controls"><input class="span12 email " id="joint_name_AkllmIXo_email" name="joint_name_AkllmIXo_email" type="email" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_marital_status-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_marital_status">Marital Status<br>婚姻狀態</label>	<div class="controls"><select class="span12  " id="joint_name_AkllmIXo_marital_status" name="joint_name_AkllmIXo_marital_status"><option value="">&nbsp;</option><option value="single">單身</option><option value="married">已婚</option><option value="separated">分居</option><option value="divorce">離婚</option><option value="widowed">喪偶</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_education-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_education">Education Level<br>教育程度</label>	<div class="controls"><select class="span12  " id="joint_name_AkllmIXo_education" name="joint_name_AkllmIXo_education"><option value="">&nbsp;</option><option value="primary">小學</option><option value="secondary">中學</option><option value="university">大專或以上</option></select><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_flat_address-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_flat_address">Flat Address<br>住宅地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_AkllmIXo_flat_address" name="joint_name_AkllmIXo_flat_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_mailing_address-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_mailing_address">Mailing Address<br>通訊地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_AkllmIXo_mailing_address" name="joint_name_AkllmIXo_mailing_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_flat_type_id-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_flat_type_id">Flat Type<br>住宅類型</label>	<div class="controls"><select class="span12  " id="joint_name_AkllmIXo_flat_type_id" name="joint_name_AkllmIXo_flat_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_occupy_from-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_occupy_from">Occupy From<br>居住由</label>	<div class="controls"><input class="span12 mydate  " id="joint_name_AkllmIXo_occupy_from" name="joint_name_AkllmIXo_occupy_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_occupy_with-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_occupy_with">Occupy With<br>同住人</label>	<div class="controls"><div class="row-fluid" style="margin: 0;"><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_parent" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="parent">Parent<br>父母</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_spouse" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="spouse">Spouse<br>配偶</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_child" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="child">Child<br>子女</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_sibling" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="sibling">Sibling<br>兄弟姊妹</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_self" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="self">Self<br>自住</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_AkllmIXo_occupy_with_other" name="joint_name_AkllmIXo_occupy_with[]" type="checkbox" value="other">Other<br>其他</label></div></div><span class="help-block"></span></div></div></div></div><br>
+
+          <legend>&nbsp;<span class="pull-left">工作資料 Employment Information</span></legend>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_company_name-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_company_name">Company Name<br>公司名稱</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_company_name" name="joint_name_AkllmIXo_company_name" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_AkllmIXo_company_address-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_company_address">Office Address<br>公司地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_AkllmIXo_company_address" name="joint_name_AkllmIXo_company_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_office_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_office_no">Office No.<br>公司電話</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_office_no" name="joint_name_AkllmIXo_office_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_direct_line_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_direct_line_no">Direct Line No.<br>直線電話 </label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_direct_line_no" name="joint_name_AkllmIXo_direct_line_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_fax_no-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_fax_no">Fax No.<br>傳真號碼</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_fax_no" name="joint_name_AkllmIXo_fax_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_industry-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_industry">Industry<br>行業</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_industry" name="joint_name_AkllmIXo_industry" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_department-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_department">Department<br>部門</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_department" name="joint_name_AkllmIXo_department" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_position-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_position">Position<br>職位</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_position" name="joint_name_AkllmIXo_position" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_employment_type-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_employment_type">Employment Type<br>受聘方式</label>	<div class="controls"><input class="span12 " id="joint_name_AkllmIXo_employment_type" name="joint_name_AkllmIXo_employment_type" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_work_from-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_work_from">Employed Date<br>入職日期</label>	<div class="controls"><input class="span12 mydate  " id="joint_name_AkllmIXo_work_from" name="joint_name_AkllmIXo_work_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_AkllmIXo_salary-control" style="position: relative;">	<label class="control-label" for="joint_name_AkllmIXo_salary">Monthly Salary<br>每月收入</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="joint_name_AkllmIXo_salary" name="joint_name_AkllmIXo_salary" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+          <input type="hidden" name="joint_name[]" value="AkllmIXo"></div></div>
+
+        <div class="template hide">
+          <span class="record-label">刪除 Delete</span>
+          <legend>&nbsp;<span class="pull-left">個人資料 Personal Information</span></legend>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_relation-control" style="position: relative;">	<label class="control-label" for="joint_name_template_relation">Relationship<br>關係</label>	<div class="controls"><input class="span12 " id="joint_name_template_relation" name="joint_name_template_relation" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span8"><div class="control-group" id="joint_name_template_name-control" style="position: relative;">	<label class="control-label" for="joint_name_template_name">Name<br>姓名</label>	<div class="controls"><input class="span12 " id="joint_name_template_name" name="joint_name_template_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="joint_name_template_gender-control" style="position: relative;">	<label class="control-label" for="joint_name_template_gender">Gender<br>性別</label>	<div class="controls"><label class="radio inline"><input class="" id="joint_name_template_gender_m" name="joint_name_template_gender" type="radio" value="m">M</label>&nbsp;<label class="radio inline"><input class="" id="joint_name_template_gender_f" name="joint_name_template_gender" type="radio" value="f">F</label>&nbsp;<span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_passport_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_passport_no">HKID<br>香港身份證號碼</label>	<div class="controls"><input class="span9 hkid " id="joint_name_template_passport_no" name="joint_name_template_passport_no" type="text" value="" maxlength="8">
+          <input class="span3 ignore" id="joint_name_template_passport_no_check_digit" name="joint_name_template_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_birth_date-control" style="position: relative;">	<label class="control-label" for="joint_name_template_birth_date">Birth Date<br>出生日期</label>	<div class="controls"><input class="span12 mydate  adult" id="joint_name_template_birth_date" name="joint_name_template_birth_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_mobile_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_mobile_no">Mobile No.<br>手提號碼</label>	<div class="controls"><input class="span12 " id="joint_name_template_mobile_no" name="joint_name_template_mobile_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_mobile_no2-control" style="position: relative;">	<label class="control-label" for="joint_name_template_mobile_no2">Mobile No. 2<br>手提號碼 2</label>	<div class="controls"><input class="span12 " id="joint_name_template_mobile_no2" name="joint_name_template_mobile_no2" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_mobile_no3-control" style="position: relative;">	<label class="control-label" for="joint_name_template_mobile_no3">Mobile No. 3<br>手提號碼 3</label>	<div class="controls"><input class="span12 " id="joint_name_template_mobile_no3" name="joint_name_template_mobile_no3" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_home_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_home_no">Home No.<br>住宅號碼</label>	<div class="controls"><input class="span12 " id="joint_name_template_home_no" name="joint_name_template_home_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_email-control" style="position: relative;">	<label class="control-label" for="joint_name_template_email">Email<br>電郵地址</label>	<div class="controls"><input class="span12 email " id="joint_name_template_email" name="joint_name_template_email" type="email" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_marital_status-control" style="position: relative;">	<label class="control-label" for="joint_name_template_marital_status">Marital Status<br>婚姻狀態</label>	<div class="controls"><select class="span12  " id="joint_name_template_marital_status" name="joint_name_template_marital_status"><option value="">&nbsp;</option><option value="single">單身</option><option value="married">已婚</option><option value="separated">分居</option><option value="divorce">離婚</option><option value="widowed">喪偶</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_education-control" style="position: relative;">	<label class="control-label" for="joint_name_template_education">Education Level<br>教育程度</label>	<div class="controls"><select class="span12  " id="joint_name_template_education" name="joint_name_template_education"><option value="">&nbsp;</option><option value="primary">小學</option><option value="secondary">中學</option><option value="university">大專或以上</option></select><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_flat_address-control" style="position: relative;">	<label class="control-label" for="joint_name_template_flat_address">Flat Address<br>住宅地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_template_flat_address" name="joint_name_template_flat_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_mailing_address-control" style="position: relative;">	<label class="control-label" for="joint_name_template_mailing_address">Mailing Address<br>通訊地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_template_mailing_address" name="joint_name_template_mailing_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_flat_type_id-control" style="position: relative;">	<label class="control-label" for="joint_name_template_flat_type_id">Flat Type<br>住宅類型</label>	<div class="controls"><select class="span12  " id="joint_name_template_flat_type_id" name="joint_name_template_flat_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_occupy_from-control" style="position: relative;">	<label class="control-label" for="joint_name_template_occupy_from">Occupy From<br>居住由</label>	<div class="controls"><input class="span12 mydate  " id="joint_name_template_occupy_from" name="joint_name_template_occupy_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_occupy_with-control" style="position: relative;">	<label class="control-label" for="joint_name_template_occupy_with">Occupy With<br>同住人</label>	<div class="controls"><div class="row-fluid" style="margin: 0;"><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_parent" name="joint_name_template_occupy_with[]" type="checkbox" value="parent">Parent<br>父母</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_spouse" name="joint_name_template_occupy_with[]" type="checkbox" value="spouse">Spouse<br>配偶</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_child" name="joint_name_template_occupy_with[]" type="checkbox" value="child">Child<br>子女</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_sibling" name="joint_name_template_occupy_with[]" type="checkbox" value="sibling">Sibling<br>兄弟姊妹</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_self" name="joint_name_template_occupy_with[]" type="checkbox" value="self">Self<br>自住</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="joint_name_template_occupy_with_other" name="joint_name_template_occupy_with[]" type="checkbox" value="other">Other<br>其他</label></div></div><span class="help-block"></span></div></div></div></div><br>
+
+          <legend>&nbsp;<span class="pull-left">工作資料 Employment Information</span></legend>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_company_name-control" style="position: relative;">	<label class="control-label" for="joint_name_template_company_name">Company Name<br>公司名稱</label>	<div class="controls"><input class="span12 " id="joint_name_template_company_name" name="joint_name_template_company_name" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="joint_name_template_company_address-control" style="position: relative;">	<label class="control-label" for="joint_name_template_company_address">Office Address<br>公司地址</label>	<div class="controls"><textarea class="span12 " id="joint_name_template_company_address" name="joint_name_template_company_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_office_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_office_no">Office No.<br>公司電話</label>	<div class="controls"><input class="span12 " id="joint_name_template_office_no" name="joint_name_template_office_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_direct_line_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_direct_line_no">Direct Line No.<br>直線電話 </label>	<div class="controls"><input class="span12 " id="joint_name_template_direct_line_no" name="joint_name_template_direct_line_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_fax_no-control" style="position: relative;">	<label class="control-label" for="joint_name_template_fax_no">Fax No.<br>傳真號碼</label>	<div class="controls"><input class="span12 " id="joint_name_template_fax_no" name="joint_name_template_fax_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_industry-control" style="position: relative;">	<label class="control-label" for="joint_name_template_industry">Industry<br>行業</label>	<div class="controls"><input class="span12 " id="joint_name_template_industry" name="joint_name_template_industry" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_department-control" style="position: relative;">	<label class="control-label" for="joint_name_template_department">Department<br>部門</label>	<div class="controls"><input class="span12 " id="joint_name_template_department" name="joint_name_template_department" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_position-control" style="position: relative;">	<label class="control-label" for="joint_name_template_position">Position<br>職位</label>	<div class="controls"><input class="span12 " id="joint_name_template_position" name="joint_name_template_position" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_employment_type-control" style="position: relative;">	<label class="control-label" for="joint_name_template_employment_type">Employment Type<br>受聘方式</label>	<div class="controls"><input class="span12 " id="joint_name_template_employment_type" name="joint_name_template_employment_type" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="joint_name_template_work_from-control" style="position: relative;">	<label class="control-label" for="joint_name_template_work_from">Employed Date<br>入職日期</label>	<div class="controls"><input class="span12 mydate  " id="joint_name_template_work_from" name="joint_name_template_work_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="joint_name_template_salary-control" style="position: relative;">	<label class="control-label" for="joint_name_template_salary">Monthly Salary<br>每月收入</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="joint_name_template_salary" name="joint_name_template_salary" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+        </div>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="hide step" id="surety_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">擔保人/咨詢人資料 Guarantor/Consultant</span>
+        <span class="pull-left" style="margin-left: 15px; font-size: 80%;"><a name="add-new-button" href="javascript:void(0)">新增資料 Add Record</a></span>
+        <span class="pull-right">Part IV</span>
+      </div>
+
+      <div class="body">
+        <div class="holder"><div class="record" id="Cjng9o8J">
+          <span class="record-label" data-original-title="" title="">刪除 Delete</span>
+          <legend>&nbsp;<span class="pull-left">個人資料 Personal Information</span></legend>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_partaker_type-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_partaker_type">Partaker Type<br>關係者類別</label>	<div class="controls"><select class="span12 form_depends " id="surety_Cjng9o8J_partaker_type" name="surety_Cjng9o8J_partaker_type"><option value="">&nbsp;</option><option value="surety">Guarantor 擔保人</option><option value="consultant">Consultant 咨詢人</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_relation-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_relation">Relationship<br>關係</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_relation" name="surety_Cjng9o8J_relation" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span8"><div class="control-group" id="surety_Cjng9o8J_name-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_name">Name<br>姓名</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_name" name="surety_Cjng9o8J_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="surety_Cjng9o8J_gender-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_gender">Gender<br>性別</label>	<div class="controls"><label class="radio inline"><input class="" id="surety_Cjng9o8J_gender_m" name="surety_Cjng9o8J_gender" type="radio" value="m">M</label>&nbsp;<label class="radio inline"><input class="" id="surety_Cjng9o8J_gender_f" name="surety_Cjng9o8J_gender" type="radio" value="f">F</label>&nbsp;<span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_passport_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_passport_no">HKID<br>香港身份證號碼</label>	<div class="controls"><input class="span9 hkid " id="surety_Cjng9o8J_passport_no" name="surety_Cjng9o8J_passport_no" type="text" value="" maxlength="8">
+          <input class="span3 ignore" id="surety_Cjng9o8J_passport_no_check_digit" name="surety_Cjng9o8J_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_birth_date-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_birth_date">Birth Date<br>出生日期</label>	<div class="controls"><input class="span12 mydate  adult" id="surety_Cjng9o8J_birth_date" name="surety_Cjng9o8J_birth_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_mobile_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_mobile_no">Mobile No.<br>手提號碼</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_mobile_no" name="surety_Cjng9o8J_mobile_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_mobile_no2-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_mobile_no2">Mobile No. 2<br>手提號碼 2</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_mobile_no2" name="surety_Cjng9o8J_mobile_no2" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_mobile_no3-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_mobile_no3">Mobile No. 3<br>手提號碼 3</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_mobile_no3" name="surety_Cjng9o8J_mobile_no3" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_home_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_home_no">Home No.<br>住宅號碼</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_home_no" name="surety_Cjng9o8J_home_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_email-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_email">Email<br>電郵地址</label>	<div class="controls"><input class="span12 email " id="surety_Cjng9o8J_email" name="surety_Cjng9o8J_email" type="email" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_marital_status-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_marital_status">Marital Status<br>婚姻狀態</label>	<div class="controls"><select class="span12  " id="surety_Cjng9o8J_marital_status" name="surety_Cjng9o8J_marital_status"><option value="">&nbsp;</option><option value="single">單身</option><option value="married">已婚</option><option value="separated">分居</option><option value="divorce">離婚</option><option value="widowed">喪偶</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_education-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_education">Education Level<br>教育程度</label>	<div class="controls"><select class="span12  " id="surety_Cjng9o8J_education" name="surety_Cjng9o8J_education"><option value="">&nbsp;</option><option value="primary">小學</option><option value="secondary">中學</option><option value="university">大專或以上</option></select><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_flat_address-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_flat_address">Flat Address<br>住宅地址</label>	<div class="controls"><textarea class="span12 " id="surety_Cjng9o8J_flat_address" name="surety_Cjng9o8J_flat_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_mailing_address-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_mailing_address">Mailing Address<br>通訊地址</label>	<div class="controls"><textarea class="span12 " id="surety_Cjng9o8J_mailing_address" name="surety_Cjng9o8J_mailing_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_flat_type_id-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_flat_type_id">Flat Type<br>住宅類型</label>	<div class="controls"><select class="span12  " id="surety_Cjng9o8J_flat_type_id" name="surety_Cjng9o8J_flat_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_occupy_from-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_occupy_from">Occupy From<br>居住由</label>	<div class="controls"><input class="span12 mydate  " id="surety_Cjng9o8J_occupy_from" name="surety_Cjng9o8J_occupy_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_occupy_with-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_occupy_with">Occupy With<br>同住人</label>	<div class="controls"><div class="row-fluid" style="margin: 0;"><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_parent" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="parent">Parent<br>父母</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_spouse" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="spouse">Spouse<br>配偶</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_child" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="child">Child<br>子女</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_sibling" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="sibling">Sibling<br>兄弟姊妹</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_self" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="self">Self<br>自住</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_Cjng9o8J_occupy_with_other" name="surety_Cjng9o8J_occupy_with[]" type="checkbox" value="other">Other<br>其他</label></div></div><span class="help-block"></span></div></div></div></div><br>
+
+          <legend>&nbsp;<span class="pull-left">工作資料 Employment Information</span></legend>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_company_name-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_company_name">Company Name<br>公司名稱</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_company_name" name="surety_Cjng9o8J_company_name" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_Cjng9o8J_company_address-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_company_address">Office Address<br>公司地址</label>	<div class="controls"><textarea class="span12 " id="surety_Cjng9o8J_company_address" name="surety_Cjng9o8J_company_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_office_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_office_no">Office No.<br>公司電話</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_office_no" name="surety_Cjng9o8J_office_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_direct_line_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_direct_line_no">Direct Line No.<br>直線電話 </label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_direct_line_no" name="surety_Cjng9o8J_direct_line_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_fax_no-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_fax_no">Fax No.<br>傳真號碼</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_fax_no" name="surety_Cjng9o8J_fax_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_industry-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_industry">Industry<br>行業</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_industry" name="surety_Cjng9o8J_industry" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_department-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_department">Department<br>部門</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_department" name="surety_Cjng9o8J_department" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_position-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_position">Position<br>職位</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_position" name="surety_Cjng9o8J_position" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_employment_type-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_employment_type">Employment Type<br>受聘方式</label>	<div class="controls"><input class="span12 " id="surety_Cjng9o8J_employment_type" name="surety_Cjng9o8J_employment_type" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_Cjng9o8J_work_from-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_work_from">Employed Date<br>入職日期</label>	<div class="controls"><input class="span12 mydate  " id="surety_Cjng9o8J_work_from" name="surety_Cjng9o8J_work_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_Cjng9o8J_salary-control" style="position: relative;">	<label class="control-label" for="surety_Cjng9o8J_salary">Monthly Salary<br>每月收入</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="surety_Cjng9o8J_salary" name="surety_Cjng9o8J_salary" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+          <input type="hidden" name="surety[]" value="Cjng9o8J"></div></div>
+
+        <div class="template hide">
+          <span class="record-label">刪除 Delete</span>
+          <legend>&nbsp;<span class="pull-left">個人資料 Personal Information</span></legend>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_partaker_type-control" style="position: relative;">	<label class="control-label" for="surety_template_partaker_type">Partaker Type<br>關係者類別</label>	<div class="controls"><select class="span12 form_depends " id="surety_template_partaker_type" name="surety_template_partaker_type"><option value="">&nbsp;</option><option value="surety">Guarantor 擔保人</option><option value="consultant">Consultant 咨詢人</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_relation-control" style="position: relative;">	<label class="control-label" for="surety_template_relation">Relationship<br>關係</label>	<div class="controls"><input class="span12 " id="surety_template_relation" name="surety_template_relation" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span8"><div class="control-group" id="surety_template_name-control" style="position: relative;">	<label class="control-label" for="surety_template_name">Name<br>姓名</label>	<div class="controls"><input class="span12 " id="surety_template_name" name="surety_template_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="surety_template_gender-control" style="position: relative;">	<label class="control-label" for="surety_template_gender">Gender<br>性別</label>	<div class="controls"><label class="radio inline"><input class="" id="surety_template_gender_m" name="surety_template_gender" type="radio" value="m">M</label>&nbsp;<label class="radio inline"><input class="" id="surety_template_gender_f" name="surety_template_gender" type="radio" value="f">F</label>&nbsp;<span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_passport_no-control" style="position: relative;">	<label class="control-label" for="surety_template_passport_no">HKID<br>香港身份證號碼</label>	<div class="controls"><input class="span9 hkid " id="surety_template_passport_no" name="surety_template_passport_no" type="text" value="" maxlength="8">
+          <input class="span3 ignore" id="surety_template_passport_no_check_digit" name="surety_template_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_birth_date-control" style="position: relative;">	<label class="control-label" for="surety_template_birth_date">Birth Date<br>出生日期</label>	<div class="controls"><input class="span12 mydate  adult" id="surety_template_birth_date" name="surety_template_birth_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_mobile_no-control" style="position: relative;">	<label class="control-label" for="surety_template_mobile_no">Mobile No.<br>手提號碼</label>	<div class="controls"><input class="span12 " id="surety_template_mobile_no" name="surety_template_mobile_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_mobile_no2-control" style="position: relative;">	<label class="control-label" for="surety_template_mobile_no2">Mobile No. 2<br>手提號碼 2</label>	<div class="controls"><input class="span12 " id="surety_template_mobile_no2" name="surety_template_mobile_no2" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_mobile_no3-control" style="position: relative;">	<label class="control-label" for="surety_template_mobile_no3">Mobile No. 3<br>手提號碼 3</label>	<div class="controls"><input class="span12 " id="surety_template_mobile_no3" name="surety_template_mobile_no3" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_home_no-control" style="position: relative;">	<label class="control-label" for="surety_template_home_no">Home No.<br>住宅號碼</label>	<div class="controls"><input class="span12 " id="surety_template_home_no" name="surety_template_home_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_email-control" style="position: relative;">	<label class="control-label" for="surety_template_email">Email<br>電郵地址</label>	<div class="controls"><input class="span12 email " id="surety_template_email" name="surety_template_email" type="email" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_marital_status-control" style="position: relative;">	<label class="control-label" for="surety_template_marital_status">Marital Status<br>婚姻狀態</label>	<div class="controls"><select class="span12  " id="surety_template_marital_status" name="surety_template_marital_status"><option value="">&nbsp;</option><option value="single">單身</option><option value="married">已婚</option><option value="separated">分居</option><option value="divorce">離婚</option><option value="widowed">喪偶</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_education-control" style="position: relative;">	<label class="control-label" for="surety_template_education">Education Level<br>教育程度</label>	<div class="controls"><select class="span12  " id="surety_template_education" name="surety_template_education"><option value="">&nbsp;</option><option value="primary">小學</option><option value="secondary">中學</option><option value="university">大專或以上</option></select><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_flat_address-control" style="position: relative;">	<label class="control-label" for="surety_template_flat_address">Flat Address<br>住宅地址</label>	<div class="controls"><textarea class="span12 " id="surety_template_flat_address" name="surety_template_flat_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_mailing_address-control" style="position: relative;">	<label class="control-label" for="surety_template_mailing_address">Mailing Address<br>通訊地址</label>	<div class="controls"><textarea class="span12 " id="surety_template_mailing_address" name="surety_template_mailing_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_flat_type_id-control" style="position: relative;">	<label class="control-label" for="surety_template_flat_type_id">Flat Type<br>住宅類型</label>	<div class="controls"><select class="span12  " id="surety_template_flat_type_id" name="surety_template_flat_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_occupy_from-control" style="position: relative;">	<label class="control-label" for="surety_template_occupy_from">Occupy From<br>居住由</label>	<div class="controls"><input class="span12 mydate  " id="surety_template_occupy_from" name="surety_template_occupy_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_occupy_with-control" style="position: relative;">	<label class="control-label" for="surety_template_occupy_with">Occupy With<br>同住人</label>	<div class="controls"><div class="row-fluid" style="margin: 0;"><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_parent" name="surety_template_occupy_with[]" type="checkbox" value="parent">Parent<br>父母</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_spouse" name="surety_template_occupy_with[]" type="checkbox" value="spouse">Spouse<br>配偶</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_child" name="surety_template_occupy_with[]" type="checkbox" value="child">Child<br>子女</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_sibling" name="surety_template_occupy_with[]" type="checkbox" value="sibling">Sibling<br>兄弟姊妹</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_self" name="surety_template_occupy_with[]" type="checkbox" value="self">Self<br>自住</label></div><div class="span2" style="margin-top: -5px;"><label class="checkbox inline" style="line-height: 1.2;"><input class="" id="surety_template_occupy_with_other" name="surety_template_occupy_with[]" type="checkbox" value="other">Other<br>其他</label></div></div><span class="help-block"></span></div></div></div></div><br>
+
+          <legend>&nbsp;<span class="pull-left">工作資料 Employment Information</span></legend>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_company_name-control" style="position: relative;">	<label class="control-label" for="surety_template_company_name">Company Name<br>公司名稱</label>	<div class="controls"><input class="span12 " id="surety_template_company_name" name="surety_template_company_name" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="surety_template_company_address-control" style="position: relative;">	<label class="control-label" for="surety_template_company_address">Office Address<br>公司地址</label>	<div class="controls"><textarea class="span12 " id="surety_template_company_address" name="surety_template_company_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_office_no-control" style="position: relative;">	<label class="control-label" for="surety_template_office_no">Office No.<br>公司電話</label>	<div class="controls"><input class="span12 " id="surety_template_office_no" name="surety_template_office_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_direct_line_no-control" style="position: relative;">	<label class="control-label" for="surety_template_direct_line_no">Direct Line No.<br>直線電話 </label>	<div class="controls"><input class="span12 " id="surety_template_direct_line_no" name="surety_template_direct_line_no" type="tel" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_fax_no-control" style="position: relative;">	<label class="control-label" for="surety_template_fax_no">Fax No.<br>傳真號碼</label>	<div class="controls"><input class="span12 " id="surety_template_fax_no" name="surety_template_fax_no" type="tel" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_industry-control" style="position: relative;">	<label class="control-label" for="surety_template_industry">Industry<br>行業</label>	<div class="controls"><input class="span12 " id="surety_template_industry" name="surety_template_industry" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_department-control" style="position: relative;">	<label class="control-label" for="surety_template_department">Department<br>部門</label>	<div class="controls"><input class="span12 " id="surety_template_department" name="surety_template_department" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_position-control" style="position: relative;">	<label class="control-label" for="surety_template_position">Position<br>職位</label>	<div class="controls"><input class="span12 " id="surety_template_position" name="surety_template_position" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_employment_type-control" style="position: relative;">	<label class="control-label" for="surety_template_employment_type">Employment Type<br>受聘方式</label>	<div class="controls"><input class="span12 " id="surety_template_employment_type" name="surety_template_employment_type" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="surety_template_work_from-control" style="position: relative;">	<label class="control-label" for="surety_template_work_from">Employed Date<br>入職日期</label>	<div class="controls"><input class="span12 mydate  " id="surety_template_work_from" name="surety_template_work_from" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="surety_template_salary-control" style="position: relative;">	<label class="control-label" for="surety_template_salary">Monthly Salary<br>每月收入</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="surety_template_salary" name="surety_template_salary" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+        </div>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="hide step" id="expense_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">信貸記錄 Credit Reference</span>
+        <span class="pull-left" style="margin-left: 15px; font-size: 80%;"><a name="add-new-button" href="javascript:void(0)">新增資料 Add Record</a></span>
+        <span class="pull-right">Part V</span>
+      </div>
+
+      <div class="body">
+        <div class="holder"><div class="record" id="WLaccFea">
+          <span class="record-label" data-original-title="" title="">刪除 Delete</span>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="expense_WLaccFea_other_creditor_id-control" style="position: relative;">	<label class="control-label" for="expense_WLaccFea_other_creditor_id">Bank / Creditor<br>銀行/信貸公司</label>	<div class="controls"><input class="span12 " id="expense_WLaccFea_other_creditor" name="expense_WLaccFea_other_creditor" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="expense_WLaccFea_credit_type_id-control" style="position: relative;">	<label class="control-label" for="expense_WLaccFea_credit_type_id">Credit Type<br>信貸類別</label>	<div class="controls"><select class="span12  " id="expense_WLaccFea_credit_type_id" name="expense_WLaccFea_credit_type_id"><option value="">&nbsp;</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="expense_WLaccFea_loan_amount-control" style="position: relative;">	<label class="control-label" for="expense_WLaccFea_loan_amount">Loan Amount<br>貸款金額</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_WLaccFea_loan_amount" name="expense_WLaccFea_loan_amount" type="number" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="expense_WLaccFea_installment_amount-control" style="position: relative;">	<label class="control-label" for="expense_WLaccFea_installment_amount">Installment<br>每月供款</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_WLaccFea_installment_amount" name="expense_WLaccFea_installment_amount" type="number" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="expense_WLaccFea_remain_installment-control" style="position: relative;">	<label class="control-label" for="expense_WLaccFea_remain_installment">Remain Tenor<br>尚欠期數</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_WLaccFea_remain_installment" name="expense_WLaccFea_remain_installment" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+          <input type="hidden" name="expense[]" value="WLaccFea"></div></div>
+
+        <div class="template hide">
+          <span class="record-label">刪除 Delete</span>
+          <div class="row-fluid"><div class="span12"><div class="control-group" id="expense_template_other_creditor_id-control" style="position: relative;">	<label class="control-label" for="expense_template_other_creditor_id">Bank / Creditor<br>銀行/信貸公司</label>	<div class="controls"><input class="span12 " id="expense_template_other_creditor" name="expense_template_other_creditor" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="expense_template_credit_type_id-control" style="position: relative;">	<label class="control-label" for="expense_template_credit_type_id">Credit Type<br>信貸類別</label>	<div class="controls"><select class="span12  " id="expense_template_credit_type_id" name="expense_template_credit_type_id"><option value="">&nbsp;</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="expense_template_loan_amount-control" style="position: relative;">	<label class="control-label" for="expense_template_loan_amount">Loan Amount<br>貸款金額</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_template_loan_amount" name="expense_template_loan_amount" type="number" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="expense_template_installment_amount-control" style="position: relative;">	<label class="control-label" for="expense_template_installment_amount">Installment<br>每月供款</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_template_installment_amount" name="expense_template_installment_amount" type="number" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="expense_template_remain_installment-control" style="position: relative;">	<label class="control-label" for="expense_template_remain_installment">Remain Tenor<br>尚欠期數</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="expense_template_remain_installment" name="expense_template_remain_installment" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+        </div>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="hide step" id="mortgage_information" style="display: none;">
+      <div class="header">
+        <span class="pull-left">物業資料 Property Information</span>
+        <span class="pull-left" style="margin-left: 15px; font-size: 80%;"><a name="add-new-button" href="javascript:void(0)">新增資料 Add Record</a></span>
+        <span class="pull-right">Part VI</span>
+      </div>
+
+      <div class="body">
+        <div class="holder"><div class="record" id="ZYBKDOBx">
+          <span class="record-label" data-original-title="" title="">刪除 Delete</span>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_property_owner_name-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_property_owner_name">Name<br>業主名稱</label>	<div class="controls"><input class="span12 " id="mortgage_ZYBKDOBx_property_owner_name" name="mortgage_ZYBKDOBx_property_owner_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_property_owner_passport_no-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_property_owner_passport_no">Passport No.<br>業主香港身份證</label>	<div class="controls"><input class="span9 hkid " id="mortgage_ZYBKDOBx_property_owner_passport_no" name="mortgage_ZYBKDOBx_property_owner_passport_no" type="text" value="" maxlength="8">
+            <input class="span3 ignore" id="mortgage_ZYBKDOBx_property_owner_passport_no_check_digit" name="mortgage_ZYBKDOBx_property_owner_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="mortgage_ZYBKDOBx_property_address-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_property_address">Property Address<br>物業地址</label>	<div class="controls"><textarea class="span12 " id="mortgage_ZYBKDOBx_property_address" name="mortgage_ZYBKDOBx_property_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span4"><div class="control-group" id="mortgage_ZYBKDOBx_saleable_area-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_saleable_area">Saleable Area<br>實用面積</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_ZYBKDOBx_saleable_area" name="mortgage_ZYBKDOBx_saleable_area" type="number" value="" placeholder="sq. ft."><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="mortgage_ZYBKDOBx_gloss_floor_area-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_gloss_floor_area">Gloss Floor<br>建築面積</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_ZYBKDOBx_gloss_floor_area" name="mortgage_ZYBKDOBx_gloss_floor_area" type="number" value="" placeholder="sq. ft."><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="mortgage_ZYBKDOBx_completion_year-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_completion_year">Year Constructed<br>落成年份</label>	<div class="controls"><input class="span12 " id="mortgage_ZYBKDOBx_completion_year" name="mortgage_ZYBKDOBx_completion_year" type="text" maxlength="4" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_property_type_id-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_property_type_id">Property Type<br>物業類別</label>	<div class="controls"><select class="span12  " id="mortgage_ZYBKDOBx_property_type_id" name="mortgage_ZYBKDOBx_property_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_property_use-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_property_use">Property Use<br>物業用途</label>	<div class="controls"><input class="span12 " id="mortgage_ZYBKDOBx_property_use" name="mortgage_ZYBKDOBx_property_use" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_purchase_date-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_purchase_date">Purchase Date<br>購入日期</label>	<div class="controls"><input class="span12 mydate  " id="mortgage_ZYBKDOBx_purchase_date" name="mortgage_ZYBKDOBx_purchase_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_purchase_price-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_purchase_price">Purchase Price<br>購入價</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_ZYBKDOBx_purchase_price" name="mortgage_ZYBKDOBx_purchase_price" type="number" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_mortgage_creditor_id-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_mortgage_creditor_id">Mortgage Creditor<br>按揭銀行/信貸公司</label>	<div class="controls"><select class="span12  " id="mortgage_ZYBKDOBx_mortgage_creditor_id" name="mortgage_ZYBKDOBx_mortgage_creditor_id"><option value="">&nbsp;</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_ZYBKDOBx_mortgage_outstanding-control" style="position: relative;">	<label class="control-label" for="mortgage_ZYBKDOBx_mortgage_outstanding">Outstanding<br>結欠</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_ZYBKDOBx_mortgage_outstanding" name="mortgage_ZYBKDOBx_mortgage_outstanding" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+          <input type="hidden" name="mortgage[]" value="ZYBKDOBx"></div></div>
+
+        <div class="template hide">
+          <span class="record-label">刪除 Delete</span>
+          <div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_template_property_owner_name-control" style="position: relative;">	<label class="control-label" for="mortgage_template_property_owner_name">Name<br>業主名稱</label>	<div class="controls"><input class="span12 " id="mortgage_template_property_owner_name" name="mortgage_template_property_owner_name" type="text" value=""><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_template_property_owner_passport_no-control" style="position: relative;">	<label class="control-label" for="mortgage_template_property_owner_passport_no">Passport No.<br>業主香港身份證</label>	<div class="controls"><input class="span9 hkid " id="mortgage_template_property_owner_passport_no" name="mortgage_template_property_owner_passport_no" type="text" value="" maxlength="8">
+            <input class="span3 ignore" id="mortgage_template_property_owner_passport_no_check_digit" name="mortgage_template_property_owner_passport_no_check_digit" type="text" value="" maxlength="1" placeholder="( &nbsp;&nbsp;)" style="text-align: center;"><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span12"><div class="control-group" id="mortgage_template_property_address-control" style="position: relative;">	<label class="control-label" for="mortgage_template_property_address">Property Address<br>物業地址</label>	<div class="controls"><textarea class="span12 " id="mortgage_template_property_address" name="mortgage_template_property_address" rows="2" style="margin-bottom: 5px;"></textarea><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span4"><div class="control-group" id="mortgage_template_saleable_area-control" style="position: relative;">	<label class="control-label" for="mortgage_template_saleable_area">Saleable Area<br>實用面積</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_template_saleable_area" name="mortgage_template_saleable_area" type="number" value="" placeholder="sq. ft."><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="mortgage_template_gloss_floor_area-control" style="position: relative;">	<label class="control-label" for="mortgage_template_gloss_floor_area">Gloss Floor<br>建築面積</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_template_gloss_floor_area" name="mortgage_template_gloss_floor_area" type="number" value="" placeholder="sq. ft."><span class="help-block"></span></div></div></div><div class="span4"><div class="control-group" id="mortgage_template_completion_year-control" style="position: relative;">	<label class="control-label" for="mortgage_template_completion_year">Year Constructed<br>落成年份</label>	<div class="controls"><input class="span12 " id="mortgage_template_completion_year" name="mortgage_template_completion_year" type="text" maxlength="4" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_template_property_type_id-control" style="position: relative;">	<label class="control-label" for="mortgage_template_property_type_id">Property Type<br>物業類別</label>	<div class="controls"><select class="span12  " id="mortgage_template_property_type_id" name="mortgage_template_property_type_id"><option value="">&nbsp;</option><option value="1">私人</option><option value="2">居屋</option><option value="3">公屋</option><option value="4">丁屋</option><option value="5">租住</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_template_property_use-control" style="position: relative;">	<label class="control-label" for="mortgage_template_property_use">Property Use<br>物業用途</label>	<div class="controls"><input class="span12 " id="mortgage_template_property_use" name="mortgage_template_property_use" type="text" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_template_purchase_date-control" style="position: relative;">	<label class="control-label" for="mortgage_template_purchase_date">Purchase Date<br>購入日期</label>	<div class="controls"><input class="span12 mydate  " id="mortgage_template_purchase_date" name="mortgage_template_purchase_date" type="date" value="" placeholder="YYYY-MM-DD"><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_template_purchase_price-control" style="position: relative;">	<label class="control-label" for="mortgage_template_purchase_price">Purchase Price<br>購入價</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_template_purchase_price" name="mortgage_template_purchase_price" type="number" value=""><span class="help-block"></span></div></div></div></div><div class="row-fluid"><div class="span6"><div class="control-group" id="mortgage_template_mortgage_creditor_id-control" style="position: relative;">	<label class="control-label" for="mortgage_template_mortgage_creditor_id">Mortgage Creditor<br>按揭銀行/信貸公司</label>	<div class="controls"><select class="span12  " id="mortgage_template_mortgage_creditor_id" name="mortgage_template_mortgage_creditor_id"><option value="">&nbsp;</option></select><span class="help-block"></span></div></div></div><div class="span6"><div class="control-group" id="mortgage_template_mortgage_outstanding-control" style="position: relative;">	<label class="control-label" for="mortgage_template_mortgage_outstanding">Outstanding<br>結欠</label>	<div class="controls"><input class="span12 number " data-decimal-place="0" id="mortgage_template_mortgage_outstanding" name="mortgage_template_mortgage_outstanding" type="number" value=""><span class="help-block"></span></div></div></div></div><br>
+        </div>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="hide step current" id="terms_and_conditions" style="display: block;">
+      <div class="header">
+        <span class="pull-left">條款及細則 Terms and Conditions</span>
+        <span class="pull-right">Part VII</span>
+      </div>
+
+      <div class="body">
+        <div class="holder">
+          <div style="padding: 19px;">
+            <div id="tnc_content">
+              <table style="width: 100%; table-layout: fixed; border-collpase: collpase; font-size: 11px;" cellpadding="4">
+                <colgroup>
+                  <col width="2%">
+                  <col width="98%">
+                </colgroup>
+                <tbody><tr style="vertical-align: top; line-height: 1.4;">
+                  <td colspan="2" style="line-height: 1.4;">
+                    I/We have/have not entered into or signed any agreement (“the third party agreement”) with any person (“third party”) for or in relation to the procuring, negotiation, obtaining or application of the loan, guaranteeing or securing the repayment of the loan (other than an agreement with solicitors instructed by me/us for the provision of legal services solely);<br>
+                    <span class="s8" style="line-height: 1.6;">本人/吾等 有/否 因促致、洽商、取得或申請該筆貸款，或因擔保或保證該筆貸款的償還，或由於與該等事務有關，而與任何人 (下稱「第三方」) 達成或簽訂了任何協議 (下稱「第三方協議」) (本人/吾等與其委任的律師純粹為提供法律服務而達成或簽訂的協議除外)；</span><br>
+
+                    <div class="control-group error" id="third_party-control">
+                      <label class="control-label" for="third_party" style="display: none;">Whether Third Party is Involved<br>有否涉及第三方</label>
+                      <div class="controls">
+                        <label class="radio inline" style="font-size: 11px;"><input class="required error" id="third_party_yes" name="third_party" type="radio" value="1" aria-required="true">have <span class="s8" style="line-height: 1.6;">有</span></label>
+                        <label class="radio inline" style="font-size: 11px;"><input class="required error" id="third_party_no" name="third_party" type="radio" value="0" aria-required="true"> have not <span class="s8" style="line-height: 1.6;">否</span></label>
+                        <span class="help-block"></span>
+                      </div>
+                    </div>
+
+                    <table id="third_party_detail" cellpadding="0" cellspacing="0" style="width: 80%; table-layout: fixed; border-collpase: collpase; display: none;">
+                      <colgroup>
+                        <col width="95">
+                        <col width="*">
+                      </colgroup>
+                      <tbody><tr>
+                        <td colspan="2" style="padding-top: 6px;">If there is a third party, The third party’s name and address are :<br><span class="s8" style="line-height: 1.6;">如有第三方，第三方的姓名/名稱及地址：</span></td>
+                      </tr>
+                      <tr>
+                        <td>Name 姓名/名稱：</td>
+                        <td style="padding: 4px 0;">
+                          <div class="control-group" id="agent_name-control">
+                            <label class="control-label" for="agent_name" style="display: none;">The Third Party's Name<br>第三方姓名/名稱</label>
+                            <div class="controls">
+                              <select class="required" id="agent_id" name="agent_id" style="width: 394px;" onchange="$('#agent_address').val($(this).find('option:selected').data('address')); $('#agent_relation').val($(this).find('option:selected').data('relation'));" <br="" aria-required="true">
+                              Notice:  Undefined variable: disabled in /var/www/html/swiss_finance_ltd2/apply.php on line 903
+                              &gt;
+                              <option value="" data-address="" data-relation="">&nbsp;</option>
+                              <option value="3" data-address="" data-relation="">天柏香港有限公司</option>
+                              <option value="4" data-address="" data-relation="">榮耀國際有限公司</option>
+                              <option value="5" data-address="" data-relation="">啟盛國際發展有限公司</option>
+                              <option value="6" data-address="" data-relation="">互利香港有限公司</option>
+                              <option value="2" data-address="" data-relation="">海聯環球策劃有限公司</option>
+                              <option value="7" data-address="" data-relation="">E-LUCK LIMITED</option>
+                              <option value="8" data-address="" data-relation="">富通企業亞洲有限公司</option>
+                              <option value="9" data-address="" data-relation="">C&amp;L專業顧問公司</option>
+                              <option value="10" data-address="" data-relation="">RAY</option>
+                              </select>
+                              <span class="help-block"></span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Address 地址：</td>
+                        <td style="padding: 4px 0;">
+                          <div class="control-group" id="agent_address-control">
+                            <label class="control-label" for="agent_address" style="display: none;">The Third Party's Address<br>第三方地址</label>
+                            <div class="controls">
+                              <input class="required" id="agent_address" name="agent_address" type="text" value="" style="width: 380px;" aria-required="true">
+                              <span class="help-block"></span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">The relationship between the company and the third party is</td>
+                      </tr>
+                      <tr>
+                        <td>與貴公司關係為：</td>
+                        <td style="padding: 4px 0;">
+                          <div class="control-group" id="agent_relation-control">
+                            <label class="control-label" for="agent_relation" style="display: none;">Relationship Between The Company and The Third Party<br>第三方與貴公司的關係</label>
+                            <div class="controls">
+                              <input class="required" id="agent_relation" name="agent_relation" type="text" value="" style="width: 380px;" aria-required="true">
+                              <span class="help-block"></span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">I/We will personally provide a copy of the third party agreement and attach it to the loan agreement.<br><span class="s8" style="line-height: 1.6;">本人/吾等亦明白要親自提供該第三方協議的副本予貴公司，作為貸款合約的附件。</span></td>
+                      </tr>
+                      </tbody></table>
+                  </td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td colspan="2">I/ We declare that all data and information stated in this application is true, accurate and complete. I/ We also declare that I/We have no intention to submit bankruptcy petition in the coming 12 months. I/We understand that I/We may contact Swiss Finance Limited ("the Company") to obtain the address of the credit reference agency so as to access for a credit report if I/We shall consider it necessary. I/We further agree and authorize the Company to:<br><span class="s8" style="line-height: 1.6;">本人/吾等聲明本申請表內所載一切資料均屬真實、正確及完整。本人/ 吾等亦聲明本人/吾等並無意圖於未來12個月內申請破產。本人/吾等亦明白於有需要時可要求瑞士信貸有限公司 (〝貴公司〞) 給予有關信貸資料機構之地址以索取本人/吾等之信貸記錄報告。本人/吾等同意及授權貴公司可:-</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>1.</td>
+                  <td>Disclose, exchange all data and information contained herein together with particulars of my/our account(s) with the Company to any credit bureaus or agencies, banks, financial institutions, debt collection agencies or any other information sources for consideration of this application;<br><span class="s8" style="line-height: 1.6;">向任何信貸資料機構、銀行、財務機構、收數公司或其他資料來源透露、交換本申請表內一切有關本人/吾等之資料及本人/吾等於貴公司其他戶口之資料；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>2.</td>
+                  <td>Access my/our credit data held by the credit reference agency and to obtain a credit report for consideration of this application and/or for further account review which include but not limited to my/our further loan application with the Company through telephone, internet, fax or whatever channels acceptable to the Company. I/We understand and agree that the Company may conduct such reviews to determine if my/our existing credit/loan amount should be increased or decreased or remained unchanged;<br><span class="s8" style="line-height: 1.6;">接觸有關信貸資料機構查閱本人/吾等之信貸記錄及索取有關報告以作此項貸款申請及其後貴公司作戶口審查之用，包括但不限於本人/吾等其後向貴公司以電話、網上、傳真或其他貴公司認可之途徑再次申請貸款。本人/吾等明白及同意貴公司可進行該等戶口審查，以判斷本人/吾等之信貸額應否增加、減少或維持不變；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>3.</td>
+                  <td>Collect all data that are required to support this application and I/We have been advised of my/our right to access, update or amend such data and information held by the Company or credit reference agency;<br><span class="s8" style="line-height: 1.6;">收集有關本人/吾等之資料以作本貸款申請之用及本人/吾等已獲貴公司通知本人/吾等可查閱及更正存於貴公司或信貸資料機構之個人資料；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>4.</td>
+                  <td>In order to obtain my/our credit assessment ,the Company will collect and upload my/our credit data and subsequent repayment status data onto the TE Credit Reference System to facilitate the approval by the Company of the loan application and/or the provision of the related financial services;<br><span class="s8" style="line-height: 1.6;">為了取得本人/吾等的信貸評估，貴公司同時亦可將本人/吾等的貸款資料及日後還款狀況資料上傳至 TE 信貸資料庫，以便貴公司審批本人/吾等的貸款申請，及／或向本人/吾等提供相關的金融服務；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>5.</td>
+                  <td>My/our uploaded credit data, for the use of credit reference of other companies and organizations who are customers of TE Credit Reference System;<br><span class="s8" style="line-height: 1.6;">本人/吾等之上載資料，可為其他TE 信貸資料庫的客戶、機構用作信用參考；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>6.</td>
+                  <td>Use the information provided above for marketing and product development purposes including but not limited to the exchange of information with any selected business partners; and<br><span class="s8" style="line-height: 1.6;">使用本人/吾等有關資料以作貴公司日後產品推廣及發展之用，包括但不限於與指定之業務夥伴交換有關資料；及</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>7.</td>
+                  <td>Provide me from time to time with the marketing and product information from the Company through direct contact with me and/or access through any electronic means including but not limited to use of telephone calls, email, fax, SMS/MMS, pre-recorded voice/video messages;<br><span class="s8" style="line-height: 1.6;">不時向本人/吾等提供有關貴公司產品推廣之資料，包括但不限於可直接聯絡本人/吾等及/或透過電子訊息包括以電話、電郵、傳真、短訊/多媒體短訊、預先錄製語音/視像訊息等方式將有關訊息傳送至本人/吾等；</span></td>
+                </tr>
+                <tr style="vertical-align: top; line-height: 1.4;">
+                  <td>8.</td>
+                  <td>Approve or decline my/our application at its absolute discretion without stating any reasons and without returning to me/us the copies of supportive documents for this application.<br><span class="s8" style="line-height: 1.6;">有絕對權力批核或拒絕本人/吾等之貸款申請而毋須提出任何理由及毋須退回有關申請文件之副本予本人/吾等。</span></td>
+                </tr>
+                </tbody></table>
+            </div>
+          </div>
+
+          <div class="control-group error" id="tnc_agree-control" style="border: none; margin: -15px 0 15px; padding: 0; text-align: center;">
+            <div class="controls" style="margin-left: 0;">
+              <label class="checkbox inline" style="font-size: 16px; text-align: left;"><input id="tnc_agree" name="tnc_agree" type="checkbox" value="1" style="margin: 10px 0 0 -25px;" aria-required="true" class="error"> I/We agree to the Terms and Conditions.<br>本人/吾等已閱讀並明白及同意以上條款及細則。</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <div id="message-holder"><div class="alert alert-error fade in"><a class="close" data-dismiss="alert">×</a><ul style="margin-bottom: 0;"><li>有否涉及第三方是必須填寫項目&nbsp;&nbsp;&nbsp;Whether Third Party is Involved is required and cannot be empty</li><li>你必須同意以上條款及細則。&nbsp;&nbsp;&nbsp;You must agree to the Terms and Conditions.</li></ul></div></div>
+
+    <fieldset id="button_set" style="padding: 0 20px; margin-top: 30px;">
+      <div class="pull-left">
+        <button class="pull-left btn btn-large hide" id="prev-button" type="button" style="display: inline-block;">上一步</button>
+      </div>
+      <div class="pull-right">
+        <button class="btn btn-large btn-primary" id="next-button" type="button" style="display: none;">下一步</button>
+        <button class="btn btn-large btn-primary hide" id="finish-button" type="button" style="display: inline-block;">完成</button>
+      </div>
+    </fieldset>
+
+    <input id="user_id" name="user_id" type="hidden" value="">
+    <input id="branch_id" name="branch_id" type="hidden" value="">
+  </form>
+</div><!--/.container-fluid -->
+
+<div class="modal hide" id="message-modal">
+  <div class="modal-body">
+    <div class="media">
+
+    </div>
+  </div>
+</div>
+
+<div id="screen-overlay"></div>
+
+
+
+
+</body></html>

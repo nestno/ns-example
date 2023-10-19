@@ -1,0 +1,2135 @@
+2021-12-31 09:09:17
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 191
+Message: "home" NOT found!
+{
+    "Peak": "0.7439MB",
+    "Memory": "0.7047MB",
+    "Duration": "409.7519ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+
+2021-12-31 09:09:17
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7814MB",
+    "Memory": "0.7452MB",
+    "Duration": "444.3898ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 09:10:58
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.8201MB",
+    "Memory": "0.7829MB",
+    "Duration": "61.234ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 09:11:18
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.8211MB",
+    "Memory": "0.7839MB",
+    "Duration": "9.5959ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 09:12:00
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.8211MB",
+    "Memory": "0.7839MB",
+    "Duration": "8.1079ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 14:52:27
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 178
+Message: "c" invalid!
+{
+    "Peak": "0.6709MB",
+    "Memory": "0.6321MB",
+    "Duration": "19.7771ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "c",
+        "data": [],
+        "argv": "sSock/go"
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+
+2021-12-31 14:52:27
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7091MB",
+    "Memory": "0.6728MB",
+    "Duration": "23.067ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "c",
+        "data": [],
+        "argv": "sSock/go"
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 14:56:42
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.8536MB",
+    "Memory": "0.7782MB",
+    "Duration": "17.5381ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "sSock/go",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 14:58:29
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.8536MB",
+    "Memory": "0.7782MB",
+    "Duration": "17.7701ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "sSock/go",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-12-31 15:02:36
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 27
+Message: Undefined property: app\lib\output::$src_output
+{
+    "Peak": "0.8536MB",
+    "Memory": "0.7781MB",
+    "Duration": "17.5672ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "sSock/go",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 27"
+    ]
+}
+
+2021-12-31 16:44:14
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "18.3229ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "8e1d4e8d1403902c",
+            "msg": "dfaot"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:44:14
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.7391MB",
+    "Duration": "17.4201ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "8e1d4e8d1403902c",
+            "msg": "dfaotdfaotdfaotdfaotdfaotdfaotdfaotdfaot"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:44:24
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "20.4349ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "8e1d4e8d1403902c",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:44:24
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "21.539ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "8e1d4e8d1403902c",
+            "msg": "asdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:44:24
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "19.269ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "8e1d4e8d1403902c",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7408MB",
+    "Duration": "336194.0162ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "!1"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7794MB",
+    "Memory": "0.7404MB",
+    "Duration": "269429.585ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "!1!1!1!1!1!1!1"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7793MB",
+    "Memory": "0.7403MB",
+    "Duration": "311149.509ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "!1!1"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.7409MB",
+    "Duration": "269405.278ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.7409MB",
+    "Duration": "258917.891ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "asdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:43
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.7409MB",
+    "Duration": "269404.6891ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "asdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.7409MB",
+    "Duration": "262831.8269ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "\u0012\u0012"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.7409MB",
+    "Duration": "262829.361ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "\u0012"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7794MB",
+    "Memory": "0.7404MB",
+    "Duration": "237818.4152ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "\u0012\u0012\u0012\u0012\u0012\u0012\u0012"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:52
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7793MB",
+    "Memory": "0.7403MB",
+    "Duration": "351432.8721ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "adas"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:52
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7412MB",
+    "Duration": "344631.4762ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "adas"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:52
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7793MB",
+    "Memory": "0.7422MB",
+    "Duration": "319586.571ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "adasadasadasadasadasadasadas"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:48:52
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7794MB",
+    "Memory": "0.7423MB",
+    "Duration": "277867.0888ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4bf01e06b3242ff9",
+            "msg": "adas"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:50:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 57
+Message: Undefined index: uid
+{
+    "Peak": "0.7782MB",
+    "Memory": "0.7392MB",
+    "Duration": "13.999ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "b40800e40c8fb4af",
+            "msg": "adsdd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 57"
+    ]
+}
+
+2021-12-31 16:50:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 57
+Message: Undefined index: uid
+{
+    "Peak": "0.7783MB",
+    "Memory": "0.7392MB",
+    "Duration": "14.405ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "b40800e40c8fb4af",
+            "msg": "adsddadsdd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 57"
+    ]
+}
+
+2021-12-31 16:50:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 57
+Message: Undefined index: uid
+{
+    "Peak": "0.7783MB",
+    "Memory": "0.7393MB",
+    "Duration": "11.497ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "b40800e40c8fb4af",
+            "msg": "adsddadsddadsddadsddadsddadsddadsdd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 57"
+    ]
+}
+
+2021-12-31 16:51:45
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "10.829ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:51:45
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.7391MB",
+    "Duration": "10.695ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asdasdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:51:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "11.0891ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:51:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "11.3358ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:51:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.739MB",
+    "Duration": "10.298ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:03
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "15.959ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:03
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.7391MB",
+    "Duration": "16.2609ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:03
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "16.427ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.741MB",
+    "Duration": "21366.2479ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.7794MB",
+    "Memory": "0.7404MB",
+    "Duration": "21405.3462ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:52:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 58
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "12.078ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "12d44a6a5deb60eb",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 58"
+    ]
+}
+
+2021-12-31 16:53:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "10.5472ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4550df52807e890b",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:46
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "10.5121ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4550df52807e890b",
+            "msg": "asdasdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "10.5669ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4550df52807e890b",
+            "msg": "asda"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "14.786ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4550df52807e890b",
+            "msg": "asdaasdaasdaasdaasdaasdaasdaasda"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:47
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "15.1021ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "4550df52807e890b",
+            "msg": "asda"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:59
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "14.024ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asdasdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:53:59
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "14.123ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:01
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "16.5699ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:01
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "17.0889ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:01
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7387MB",
+    "Duration": "14.9839ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7776MB",
+    "Memory": "0.7386MB",
+    "Duration": "13.3071ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:07
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7777MB",
+    "Memory": "0.7387MB",
+    "Duration": "12.2061ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "0942e20a4b70a91a",
+            "msg": "asdasdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:31
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.7389MB",
+    "Duration": "11.1299ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "db91ac0b144316d4",
+            "msg": "qwe"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:31
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.7389MB",
+    "Duration": "13.514ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "db91ac0b144316d4",
+            "msg": "qweqweqweqweqweqweqweqwe"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:54:31
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 47
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.7779MB",
+    "Memory": "0.7389MB",
+    "Duration": "13.854ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "db91ac0b144316d4",
+            "msg": "qwe"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 47"
+    ]
+}
+
+2021-12-31 16:55:20
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "12.1069ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:20
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.7391MB",
+    "Duration": "11.714ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asdasdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:20
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "12.13ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:25
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "13.6299ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:25
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "12.2828ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:25
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.739MB",
+    "Duration": "12.0311ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "da3b321500483139",
+            "msg": "asdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:53
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "11.3971ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:53
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "11.9381ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:55:53
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.7781MB",
+    "Memory": "0.739MB",
+    "Duration": "10.3281ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asdasdasdasdasdasdasd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:56:02
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "10.469ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:56:03
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "10.4179ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 16:56:05
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 59
+Message: Undefined index: uid
+{
+    "Peak": "0.778MB",
+    "Memory": "0.739MB",
+    "Duration": "10.0448ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onMessage",
+            "sid": "c9d18737e79170e3",
+            "msg": "asd"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 299",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 363",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onMessage called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 59"
+    ]
+}
+
+2021-12-31 21:40:33
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 52
+Message: Undefined index: uid
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7385MB",
+    "Duration": "17.1762ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "dd78a9a22de1f5cf",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "app/contorllers/sSock->onMessage called in H:/www/ns/app/contorllers/sSock.php on line 32",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 52"
+    ]
+}
+
+2021-12-31 21:40:59
+Notice: ErrorException caught in H:\www\ns\app\contorllers\sSock.php on line 52
+Message: Undefined index: uid
+{
+    "Peak": "0.7775MB",
+    "Memory": "0.7385MB",
+    "Duration": "15.2462ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "/Ext\\libMPC/procUnit",
+        "data": {
+            "c": "/app\\contorllers\\sSock/onConnect",
+            "sid": "14f6d703268d0fe3",
+            "proc": "tcp:2468:DESKTOP-UCDPI68"
+        },
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "Ext/libMPC->procUnit called",
+        "Ext/libMPC->execJob called in H:/www/ns/NervSys/Ext/libMPC.php on line 298",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Ext/libMPC.php on line 362",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/sSock->onConnect called",
+        "app/contorllers/sSock->onMessage called in H:/www/ns/app/contorllers/sSock.php on line 32",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/sSock.php on line 52"
+    ]
+}
+
+2021-12-31 22:02:31
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 178
+Message: "c" invalid!
+{
+    "Peak": "0.6708MB",
+    "Memory": "0.6321MB",
+    "Duration": "12.8651ms",
+    "Param": {
+        "ip": "Local CLI",
+        "cmd": "c",
+        "data": [],
+        "argv": "sSock/go"
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+

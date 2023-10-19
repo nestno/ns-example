@@ -1,0 +1,24 @@
+2021-05-14 10:24:26
+Warning: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: preg_match(): Compilation failed: (*VERB) not recognized or malformed at offset 34
+{
+    "Peak": "0.9809MB",
+    "Memory": "0.8902MB",
+    "Duration": "82.6681ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "preg_match called in H:/www/ns/app/contorllers/home.php on line 74",
+        "Core/Lib/Error->errorHandler called"
+    ]
+}
+

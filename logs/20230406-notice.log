@@ -1,0 +1,22 @@
+2023-04-06 11:25:34
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 101
+Message: "controllers/home" NOT found!
+{
+    "Peak": "0.6791MB",
+    "Memory": "0.6438MB",
+    "Duration": "204.838ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "controllers/home/index",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in H:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Router->parseCgi called in H:/www/ns/NervSys/NS.php on line 111",
+        "Nervsys/Core/Lib/Router->process called in H:/www/ns/NervSys/Core/Lib/Router.php on line 42",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 170",
+        "Nervsys/Core/Lib/Router->getCgiUnit called"
+    ]
+}
+

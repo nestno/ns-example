@@ -11,10 +11,11 @@ use League\Plates\Template\Func;
 use League\Plates\Template\Functions;
 use League\Plates\Template\Name;
 use League\Plates\Template\Template;
+use Nervsys\Core\Factory;
 /**
  * Template API and environment settings storage.
  */
-class Engine
+class Engine extends Factory
 {
     /**
      * Default template directory.
@@ -53,6 +54,7 @@ class Engine
      */
     public function __construct($directory = null, $fileExtension = 'php')
     {
+
         $this->directory = new Directory($directory);
         $this->fileExtension = new FileExtension($fileExtension);
         $this->folders = new Folders();

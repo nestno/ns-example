@@ -1,0 +1,847 @@
+2021-11-18 11:00:56
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7171MB",
+    "Memory": "0.6776MB",
+    "Duration": "24.343ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:01:01
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 191
+Message: "index" NOT found!
+{
+    "Peak": "0.7423MB",
+    "Memory": "0.7031MB",
+    "Duration": "3.798ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "index/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+
+2021-11-18 11:01:01
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7798MB",
+    "Memory": "0.7436MB",
+    "Duration": "5.321ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "index/index",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:01:26
+Notice: Exception caught in H:\www\ns\NervSys\Core\Lib\Router.php on line 178
+Message: "home" invalid!
+{
+    "Peak": "0.7421MB",
+    "Memory": "0.7029MB",
+    "Duration": "3.8691ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/Router->parse called in H:/www/ns/NervSys/NS.php on line 115",
+        "Core/Lib/Router->callParser called in H:/www/ns/NervSys/Core/Lib/Router.php on line 111",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/Router.php on line 242",
+        "Core/Lib/Router->cgiParser called"
+    ]
+}
+
+2021-11-18 11:01:26
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7797MB",
+    "Memory": "0.7435MB",
+    "Duration": "4.833ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:02:09
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Trying to access array offset on value of type null
+{
+    "Peak": "0.9753MB",
+    "Memory": "0.8807MB",
+    "Duration": "196.6729ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 11:02:09
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.9753MB",
+    "Memory": "0.8816MB",
+    "Duration": "197.0179ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:11:12
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "452.6799ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:12:18
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.871MB",
+    "Memory": "4.88MB",
+    "Duration": "412.9071ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:13:56
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "432.2231ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:16:37
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Undefined offset: 1
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8791MB",
+    "Duration": "1691.031ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:16:37
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "1691.493ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:16:51
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Undefined offset: 1
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8791MB",
+    "Duration": "433.943ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:16:51
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "434.232ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:17:14
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Undefined offset: 1
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8791MB",
+    "Duration": "440.7301ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:17:14
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "441.0191ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:17:52
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 74
+Message: Undefined offset: 1
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8791MB",
+    "Duration": "478.3318ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 74"
+    ]
+}
+
+2021-11-18 11:17:52
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "8.8711MB",
+    "Memory": "4.8801MB",
+    "Duration": "478.6608ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:33:20
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "91.156ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:33:39
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "119.787ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:33:47
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "127.4769ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:34:56
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "128.2341ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:41:55
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "0.7821MB",
+    "Memory": "0.7458MB",
+    "Duration": "6.103ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:56:28
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "135.3362ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 11:56:33
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.0034MB",
+    "Memory": "0.9454MB",
+    "Duration": "124.7652ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:14:00
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1379MB",
+    "Memory": "0.9456MB",
+    "Duration": "125.9449ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:47:38
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0977MB",
+    "Duration": "191.6552ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:47:38
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "192.0831ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:48:06
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0977MB",
+    "Duration": "131.6719ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:48:06
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "131.958ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:48:13
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0976MB",
+    "Duration": "199.63ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:48:13
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "199.9221ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:48:26
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0976MB",
+    "Duration": "143.975ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:48:26
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "144.2959ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:48:31
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0976MB",
+    "Duration": "149.7581ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:48:31
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "150.0962ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
+2021-11-18 12:48:38
+Notice: ErrorException caught in H:\www\ns\app\contorllers\home.php on line 75
+Message: Undefined offset: 1
+{
+    "Peak": "1.1372MB",
+    "Memory": "1.0977MB",
+    "Duration": "161.7839ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Execute->callCgi called in H:/www/ns/NervSys/NS.php on line 122",
+        "Core/Execute->runScript called in H:/www/ns/NervSys/Core/Execute.php on line 166",
+        "call_user_func called in H:/www/ns/NervSys/Core/Execute.php on line 241",
+        "app/contorllers/home->test called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/contorllers/home.php on line 75"
+    ]
+}
+
+2021-11-18 12:48:38
+Notice: ErrorException caught in H:\www\ns\app\lib\output.php on line 24
+Message: Undefined property: Core\Lib\IOUnit::$return_type
+{
+    "Peak": "1.1372MB",
+    "Memory": "0.9455MB",
+    "Duration": "162.0729ms",
+    "Param": {
+        "ip": "127.0.0.1",
+        "cmd": "home/test",
+        "data": [],
+        "argv": ""
+    },
+    "Trace": [
+        "NS->__construct called in H:/www/ns/app/api.php on line 27",
+        "Core/Lib/IOUnit->output called in H:/www/ns/NervSys/NS.php on line 126",
+        "call_user_func called in H:/www/ns/NervSys/Core/Lib/IOUnit.php on line 287",
+        "app/lib/output->index called",
+        "Core/Lib/Error->errorHandler called in H:/www/ns/app/lib/output.php on line 24"
+    ]
+}
+
