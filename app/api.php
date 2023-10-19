@@ -19,7 +19,7 @@
  */
 
 require dirname(__DIR__).'/NervSys/NS.php';
-
+var_dump(124);die;
 $ns = new Nervsys\NS();
 
 $ns->CorsAddRecord('*')
