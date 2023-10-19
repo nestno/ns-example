@@ -9,12 +9,14 @@
 
 namespace app\contorllers;
 
-use ext\factory;
+use Core\Factory;
 
-class home extends factory
+class category extends Factory
 {
   public $tz = '*';
-
+  /**
+   * name function
+   */
   public function __construct()
   {
     //var_dump(111);
@@ -22,13 +24,13 @@ class home extends factory
 
   public function index(): array
   {
-    $url = ['bbb'=>'http://taobao.com'];
+    $url = ['ccc'=>'http://taobao.com'];
     return $url;
   }
 
   public function getData(): array
   {
-    $url = ['aaa'=>'http://taobao.com'];
+    $url = ['ddd'=>'http://taobao.com'];
     return $url;
   }
 }
