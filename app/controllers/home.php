@@ -15,7 +15,8 @@ use Bt\Lightbenc;
 use Nervsys\Core\Factory;
 use Nervsys\Ext\libHttp;
 use Nervsys\Ext\libPDO;
-
+use Calendar\Calendar as CalendarInfo;
+use App\lib\Calendar;
 class home extends Factory
 {
   // public $tz = '*';
@@ -25,7 +26,7 @@ class home extends Factory
   public const waters = [2, 5, 8, 10];
   public const TIMES = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
   public const Texts = ['空亡：此卦最凶，算啥啥空', '大安：此封最吉，大吉大利', '流连：运气平平，凡事拖延', '速喜：上吉好卦，喜在眼前', '赤口：多有争执，事态不和', '小吉：有好结果，值得坚守'];
-
+  public $times = 1977;
   public function __construct()
   {
 
@@ -124,14 +125,23 @@ class home extends Factory
     // debug_print_backtrace();
     // $this->pdo = libPDO::new()->connect();
     $this->engine = Engine::new();
+    $calendar = Calendar::new();
+    $today = $calendar->convertSolarToLunar(date('Y'),date('m'),date('d'));
     // $pre = Hook::new()->prepend;
     // var_dump(123);die;
     $currentTime = date('H', time());
     $cIndex = ceil(($currentTime % 23) / 2);
     $currentDay = date('d', time());
     $currentMonth = date('m', time());
-    $index = ($currentMonth + $currentDay + $cIndex + 1) % 6;
-    $url = ['score' => $this->countScore(205, 0), 'bbb' => 'http://taobao22.com', 'cc' => $this->fbn(3), 'name' => 'jerry', 'company' => '迪淘科技', 'currentTime' => $currentTime, 'cIndex' => self::TIMES[$cIndex], 'index' => self::Texts[$index]];
+    $year = date('Y',time());
+    $days = $year - $this->times;
+    $r = intval($days%4);
+    $q = intval($days/4);
+    $startDate = date('Y-m-d', strtotime(date('Y') . '-01-01'));
+    $daysSinceStartOfYear = (time() - strtotime($startDate)) / (24 * 3600);
+    $nlday = intval(fmod((14*$q+10.6*($r+1)+ceil($daysSinceStartOfYear)) , 29.5));
+    $index = ($today[4] + $today[5] + $cIndex + 1) % 6;
+    $url = ['currentTime' => $currentTime, 'cIndex' => self::TIMES[$cIndex], 'index' => self::Texts[$index]];
 
     return $url;
   }
@@ -359,5 +369,15 @@ class home extends Factory
       $min = 5;
     }
     return $min;
+  }
+
+  public function calendarInfo():array 
+  {
+    $calendar = [];
+    $calendar_info = CalendarInfo::new('demo');
+    $dateTime =  new \DateTime('now + 1year');
+    $calendar = $calendar_info->createCalendar(2024,3,5);
+    $calendar['solar'] = $calendar_info->yearSolarTerms($dateTime);
+    return $calendar;
   }
 }
