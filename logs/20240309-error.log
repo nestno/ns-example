@@ -1,0 +1,27 @@
+2024-03-09 16:25:02
+Error: ArgumentCountError caught in G:\www\ns\app\lib\Calendar\SolarTerm.php on line 76
+Message: var_dump() expects at least 1 argument, 0 given
+{
+    "Peak": "1.1392MB",
+    "Memory": "1.0582MB",
+    "Duration": "11.9009ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/calendarInfo",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->calendarInfo called",
+        "Calendar/Calendar->createCalendar called in G:/www/ns/app/controllers/home.php on line 379",
+        "Calendar/Calendar->yearSolarTerms called in G:/www/ns/app/lib/Calendar/Calendar.php on line 253",
+        "Calendar/SolarTerm::solarTerms called in G:/www/ns/app/lib/Calendar/Calendar.php on line 480",
+        "var_dump called in G:/www/ns/app/lib/Calendar/SolarTerm.php on line 76"
+    ]
+}
+

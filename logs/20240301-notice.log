@@ -1,0 +1,216 @@
+2024-03-01 23:01:28
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 60.95935185185185 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "8.0421ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:02:10
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 60.959837962962965 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "8.0681ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:02:13
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 60.95987268518518 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "6.6731ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:03:10
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 60.960532407407406 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "9.1829ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:03:13
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 145.36056712962963 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "9.2149ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:07:52
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 29.5 to int loses precision
+{
+    "Peak": "0.9072MB",
+    "Memory": "0.8714MB",
+    "Duration": "6.6049ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:08:39
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 257.4 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "8.1022ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:09:22
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 257.4 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "9.8379ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+
+2024-03-01 23:12:31
+Notice: ErrorException caught in G:\www\ns\app\controllers\home.php on line 140
+Message: Implicit conversion from float 257.4 to int loses precision
+{
+    "Peak": "0.9071MB",
+    "Memory": "0.8714MB",
+    "Duration": "9.7172ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 140"
+    ]
+}
+

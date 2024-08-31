@@ -1,0 +1,24 @@
+2023-11-07 07:42:59
+Warning: ErrorException caught in G:\www\ns\app\controllers\home.php on line 134
+Message: Undefined property: app\controllers\home::$TIMES
+{
+    "Peak": "0.9012MB",
+    "Memory": "0.8655MB",
+    "Duration": "15.218ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.8",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/controllers/home.php on line 134"
+    ]
+}
+

@@ -1,0 +1,186 @@
+2024-03-02 09:00:09
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "Calendar" not found
+{
+    "Peak": "1.2218MB",
+    "Memory": "1.0357MB",
+    "Duration": "10.469ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:02:12
+Error: Error caught in G:\www\ns\app\lib\calendar.php on line 4
+Message: Class "api\lib\Factory" not found
+{
+    "Peak": "1.2218MB",
+    "Memory": "1.0371MB",
+    "Duration": "14.1158ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called",
+        "Nervsys/NS::Nervsys\\Core\\{closure} called in G:/www/ns/app/controllers/home.php on line 127",
+        "require called in G:/www/ns/NervSys/Core/System.php on line 100"
+    ]
+}
+
+2024-03-02 09:02:38
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "Calendar" not found
+{
+    "Peak": "1.2222MB",
+    "Memory": "1.0357MB",
+    "Duration": "11.003ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:03:07
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "Calendar" not found
+{
+    "Peak": "1.2222MB",
+    "Memory": "1.0357MB",
+    "Duration": "9.671ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:04:04
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "app\controllers\Calendar" not found
+{
+    "Peak": "0.9074MB",
+    "Memory": "0.8697MB",
+    "Duration": "8.085ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:05:09
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "app\controllers\Calendar" not found
+{
+    "Peak": "0.9074MB",
+    "Memory": "0.8697MB",
+    "Duration": "9.8832ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:05:23
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "Calendar" not found
+{
+    "Peak": "1.2222MB",
+    "Memory": "1.0357MB",
+    "Duration": "10.0999ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+
+2024-03-02 09:06:00
+Error: Error caught in G:\www\ns\app\controllers\home.php on line 127
+Message: Class "Calendar" not found
+{
+    "Peak": "1.2222MB",
+    "Memory": "1.0357MB",
+    "Duration": "11.5719ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/index",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->index called"
+    ]
+}
+

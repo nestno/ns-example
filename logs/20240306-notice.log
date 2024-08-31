@@ -1,0 +1,51 @@
+2024-03-06 21:11:30
+Notice: ErrorException caught in G:\www\ns\app\lib\Calendar\Calendar.php on line 613
+Message: Implicit conversion from float 2.6 to int loses precision
+{
+    "Peak": "1.2293MB",
+    "Memory": "1.116MB",
+    "Duration": "12.907ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/calendarInfo",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->calendarInfo called",
+        "Calendar/Calendar->createCalendar called in G:/www/ns/app/controllers/home.php on line 378",
+        "Calendar/Calendar->lunarDate called in G:/www/ns/app/lib/Calendar/Calendar.php on line 273",
+        "Calendar/Calendar->lunarDayChinese called in G:/www/ns/app/lib/Calendar/Calendar.php on line 545",
+        "Nervsys/Core/Lib/Error->errorHandler called in G:/www/ns/app/lib/Calendar/Calendar.php on line 613"
+    ]
+}
+
+2024-03-06 21:36:30
+Notice: Exception caught in G:\www\ns\app\controllers\home.php on line 378
+Message: Failed to parse time string (1709732190) at position 8 (9): Unexpected character
+{
+    "Peak": "0.9791MB",
+    "Memory": "0.869MB",
+    "Duration": "8.373ms",
+    "Params": {
+        "ip": "127.0.0.1",
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "cmd": "home/calendarInfo",
+        "lang": "zh-CN,zh;q=0.9",
+        "data": [],
+        "argv": []
+    },
+    "Trace": [
+        "Nervsys/NS->go called in G:/www/ns/app/api.php on line 31",
+        "Nervsys/Core/Lib/Caller->runApiFn called in G:/www/ns/NervSys/NS.php on line 122",
+        "call_user_func_array called in G:/www/ns/NervSys/Core/Lib/Caller.php on line 64",
+        "app/controllers/home->calendarInfo called",
+        "DateTime->__construct called in G:/www/ns/app/controllers/home.php on line 378"
+    ]
+}
+
